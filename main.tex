@@ -38,6 +38,11 @@ We provide forecasts of cold dark matter isocurvature (CDI) constraints for comb
 \section{Methods}
 
 \subsection{Perturbations and Power Spectra}
+\writingnote{
+I should include the description of PII and PRI.
+}
+
+
 For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX). Like Planck, we specify these power spectra through two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$. We use the same uniform priors as Planck,
 \begin{equation}
     \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \in (10^{-9}, 10^{-8}),
@@ -107,13 +112,14 @@ In addition to the $\Lambda$CDM and isocurvature parameters, we need two nuisanc
 \writingnote{
     \begin{itemize}
         \item a triangle plot with all of the forecasts
-        \item derived parameters
+        \item derived parameters plot, overplot all forecasts
+        \item ACTPol measurements 
     \end{itemize}
 }
 
 \section{Conclusion}
 
 
-\bibliography{example}
+\bibliography{mybib}
 
 \end{document}
