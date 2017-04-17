@@ -1,40 +1,13 @@
-%
-% Latex example file for postgrads (04/10/03)
-%
-% If you have questions please email me: 
-%
-% M.L.Balogh@durham.ac.uk
-%
-% or find me in room OC312.
-%
-% you can copy this file and others from :
-%
-% http://star-www.dur.ac.uk/~balogh/latex/
-%
-% Note you can get Latex style files etc. from http://www.ctan.org
-
-% Latex2e style  declaration
-
-
-% The emulateapj.cls file produces output like that of the
-% Astrophysical Journal.  Use instead of aastex.cls.  This usage
-% supercedes older versions that used the aastex package with emulateapj5.sty.
-% YOU SHOULD REMOVE THE TABLE OF
-% CONTENTS PAGE WHEN USING APJ FORMAT.
-%
 \documentclass[11pt,a4paper]{emulateapj}
 \bibliographystyle{apj}
-
 
 %define general packages
 \usepackage{epsfig}
 \usepackage{amsmath}
 \usepackage{natbib}
 
-%internal short cuts
-\def \HgA {H$\gamma_A$}
-\def \gon {Gonz\'{a}lez}
-\def \Hbp {H$\beta ^\prime$}
+\usepackage{xcolor}
+\newcommand\myworries[1]{\textcolor{red}{#1}}
 
 \begin{document}
 
@@ -44,13 +17,6 @@
 %\maketitle
 
 
-% Usually omit these for ApJ or MNRAS style files:
-%\tableofcontents
-%
-%\listoffigures
-%
-%\listoftables
-
 \begin{abstract}
 This is a sample document which demonstrates some of the basic features
 of \LaTeX.  You can easily reformat it for different document or bibliography styles.
@@ -59,10 +25,37 @@ of \LaTeX.  You can easily reformat it for different document or bibliography st
 %Section heading
 \section{Introduction}
 
+\begin{itemize}
+\item 
+\end{itemize}
+
 \section{Methods}
 
+\subsection{Perturbations and Power Spectra}
+For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum  with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX). Like Planck, we specify these power spectra through two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$. We use the same uniform priors as Planck,
+\begin{equation}
+    \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \in (10^{-9}, 10^{-8}),
+\end{equation}
+\begin{equation}
+    \mathcal{P}_{\mathcal{II}}^{(1)}, \mathcal{P}_{\mathcal{II}}^{(2)} \in (0, 10^{-8}),
+\end{equation}
+\begin{equation}
+    \mathcal{P}_{\mathcal{RI}}^{(1)} \in (-10^{-8}, 10^{-8}).
+\end{equation}
+We follow Planck 2015 XX's convention of fixing $\mathcal{P}_{\mathcal{RI}}^{(2)}$ from these parameters. Then we sample over the $\Lambda$CDM scenario, but replace $A_s$ and $n_s$ with $\mathcal{P}_{\mathcal{RR}}^{(1)}$,  $\mathcal{P}_{\mathcal{RR}}^{(2)}$ and add the three isocurvature parameters $\mathcal{P}_{\mathcal{II}}^{(1)}$, $\mathcal{P}_{\mathcal{II}}^{(2)}$, $\mathcal{P}_{\mathcal{RI}}^{(1)}$.
+\begin{align}
+\{ \Omega_b h^2, \Omega_c h^2, \theta_A, &\tau_{reio}, \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \\
+& \mathcal{P}_{\mathcal{II}}^{(1)}, \mathcal{P}_{\mathcal{II}}^{(2)}, \mathcal{P}_{\mathcal{RI}}^{(1)}    \}
+\end{align}
+
+We could describe 
+
+
+
 \subsection{Forecasting}
-To simulate 
+
+
+
 
 \begin{deluxetable*}{cccccc}[h]
 \tabletypesize{\footnotesize} 
@@ -82,23 +75,6 @@ To simulate
 
 
 
-
-% \begin{table}
-%   \caption{Forecast Parameters}
-%   \label{tab:futureinstruments}
-%   \begin{center}
-%     \leavevmode
-%     \begin{tabular}{llllll} \hline \hline              
-%   Experiment     & $l_{min}$ - $l_{max}$  & $f_{sky}$ & $\theta$ FWHM &  $\sigma_T$ ($\mu$K arcmin) &  $\sigma_P$ ($\mu$K arcmin)  \\ \hline 
-%   CMB S4          & 30-3000 & 0.40 & 3.0 & 1.0 & 1.4\\
-%   PIXIE           & 2 - 150 & 0.8 & 120 & 2.9 & 4.0 \\
-%   Planck 2017 high\_l & 30 - 2500 & 0.65 & 10,7.1,5.0 & 65.0, 43.0, 66.0 & 103.0, 81.0, 134.0 \\
- 
-%     \end{tabular}
-%   \end{center}
-% \end{table}
-
-
 \subsection{ACTPol Likelihood}
 
 We use the same methods as in Louis et al. 2016 for the ACT likelihood, marginalizing the ACTPol spectrum from $350 < l < 4000$ to construct a Gaussian likelihood function with an overall calibration parameter. We produce our parameter constraints by summing this with the Planck 2015 log-likelihood. We use the public CMB-marginalized 'plik-lite' Planck 2015 likelihood which uses TT for $30 \leq l \leq 2508$, a likelihood generated from CMB lensing, and a joint TT, EE, BB, and TE likelihood for the range $2 \leq l < 30$. 
@@ -110,229 +86,13 @@ We use the same methods as in Louis et al. 2016 for the ACT likelihood, marginal
 &-2 \ln L(\text{Planck Lensing})
 \end{align}
 
-For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum  with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX). Like Planck, we specify these power spectra through two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$. We use the same uniform priors as Planck,
+In addition to the $\Lambda$CDM and isocurvature parameters, we need two nuisance parameters coming from the normalizations of the two instruments we use data from (Planck and ACT),
 \begin{equation}
-    \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \in (10^{-9}, 10^{-8}),
-\end{equation}
-\begin{equation}
-    \mathcal{P}_{\mathcal{II}}^{(1)}, \mathcal{P}_{\mathcal{II}}^{(2)} \in (0, 10^{-8}),
-\end{equation}
-\begin{equation}
-    \mathcal{P}_{\mathcal{RI}}^{(1)} \in (-10^{-8}, 10^{-8}).
-\end{equation}
-We follow Planck 2015 XX's convention of fixing $\mathcal{P}_{\mathcal{RI}}^{(2)}$ from these parameters. Then we sample over the standard cosmological parameters,
-\begin{equation}
-\{ \Omega_b h^2, \Omega_c h^2, \theta_A, \tau_{reio}, \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \}
-\end{equation}
-in addition to two nuisance parameters coming from the normalizations of the two instruments we use data from (Planck and ACT),
-\begin{equation}
-\{ A_{planck}, Y_p \}
-\end{equation}
-and finally the three new isocurvature parameters.
-\begin{equation}
-\{\mathcal{P}_{\mathcal{II}}^{(1)}, \mathcal{P}_{\mathcal{II}}^{(2)}, \mathcal{P}_{\mathcal{RI}}^{(1)}    \}
+\{ A_{planck}, Y_p \}.
 \end{equation}
 
 \section{Results}
 
-
-
-% This file is an example of how to use \LaTeX.  In principle, you only have to worry
-% about the text content; formatting is taken care of by the options and arguments of
-% the ``$\backslash$documentclass'' command (other style files are available on the Web;
-% see \S\ref{sec-webrefs}).  In practice, however, things are not so simple.  Things like
-% figures and bibliographies can go all wrong when you change styles, so expect to have
-% to fiddle!  
-
-% \section{Examples}
-
-% This is an example of a \LaTeX\ document.  
-
-% \medskip
-
-% Galaxies are one of the \textbf{grandest} structures of the universe.
-% Their sizes range from as small as $10^6 \text{M}_\odot$ to as much as
-% $10^{13} \text{M}_\odot$, being built of stars, interstellar gas, dust
-% and perhaps dark matter. Yet galaxies were recognized only early in
-% this century (1920s) as \textit{vast} assemblages of stars, distinct
-% from our own Galaxy. Edwin~P.~Hubble (1889~-~1953) was one of the
-% pioneers in this field. He introduced a classification diagram for
-% galaxies, now widely known as the Hubble ``tuning fork'' diagram
-% \cite[][see Figure~\ref{fig:hubble_dia} for a revised Hubble
-% diagram]{hub36}.
-%
-% Example of figure: force single column format
-%
-% \begin{figure*}
-%   \begin{center}
-%     \leavevmode
-%       \epsfxsize=15cm\epsfbox{hubble.epsi}
-%        \caption[The Hubble Diagram]{Revised ``Hubble tuning fork''
-%          diagram taken from \citet{kor96}.}
-%      \label{fig:hubble_dia}
-%   \end{center}
-% \end{figure*}
-
-% An infrared image of a nearby galaxy is shown in Figure~\ref{fig-EA},
-% with a contour overlayed at a surface brightness of $\mu_{K_s}=17$
-% mag~arcsec$^{-2}$.  The box shows the 5'' field of view of the
-% GMOS integral field unit, in nod-and-shuffle mode.
-% \begin{figure}
-%     \leavevmode\epsfxsize=8cm\epsfbox{EA.epsi}
-%     \caption{This is a nearby galaxy from the Sloan Digital Sky Survey,
-%       imaged with UFTI on UKIRT.  The contour shows a constant surface
-%       brightness of $\mu_{K_s}=17$
-% mag~arcsec$^{-2}$.  The box shows the 5'' field of view of the
-% GMOS integral field unit, in nod-and-shuffle mode.
-% \label{fig-EA}}
-% \end{figure}
-
-%
-% Subsection heading
-%
-% \subsection{Example of a list and how to run \LaTeX} 
-
-% % list environment
-% \begin{enumerate}
-  
-% \item Write document: emacs test.tex $\Longrightarrow$ test.tex
-  
-% \item \LaTeX\ document: latex test.tex $\Longrightarrow$ test.dvi
-
-% \item Create bibliography: bibtex test.tex $\Longrightarrow$ test.bbl
-
-% \item Correct X-refs: redo step 2. twice more!
-  
-% \item View document: xdvi test.dvi 
-
-% \item Produce ps file: dvips test.dvi $\Longrightarrow$ test.ps
-
-% \item Print document: lpr test.ps
-
-% \end{enumerate}
-
-% %
-% % Another subsection
-% %
-% \subsection{Math stuff}
-
-% For the following discussion let $G(n)$ be the spectrum of a galaxy
-% whose redshift and velocity dispersion are to be determined and $S(n)$
-% the spectrum of a {template} star at zero redshift, similar spectral type
-% to the galaxy and at instrumental resolution. The spectra have been
-% continuum subtracted and end-masked, and are each sampled in N bins of
-% equal $\log \lambda$ spacing. A velocity shift is then a linear
-% function of the spacing $\Delta \log \lambda$, with velocity increments
-% $\Delta v$ as follows:
-
-% %
-% % ``Pure'' equations
-% %
-% \begin{eqnarray}
-%   \Delta v &=& c \times \Delta \ln \lambda \\
-%            &=& c \times \ln (10) \times \Delta \log \lambda
-% \end{eqnarray}
-% where c is the speed of light. Now the normalized cross correlation
-% function is defined as:
-
-% \begin{equation}
-%   \label{equ:cross_corr}
-%   c(n)=G(m) \otimes S(n) = \frac{1}{N\sigma_G\sigma_S}\sum_{m=0}^{N}G(m)S(m-n)
-% \end{equation}
-% where $\sigma_G$ and $\sigma_S$ are the RMS deviations:
-
-% \begin{eqnarray}
-%   \sigma_G^2 &=& \frac{1}{N}\sum_{n=0}^{N}G(n)^2 \\
-%   \sigma_S^2 &=& \frac{1}{N}\sum_{n=0}^{N}S(n)^2 
-% \end{eqnarray}
-
-% %
-% %
-% \subsection{Table environment}
-% %
-% %
-
-% %
-% % Table environment
-% %
-% \begin{table}
-%   \caption{A Collection of Distance Measurements to Fornax}
-%   \label{tab:distance}
-%   \begin{center}
-%     \leavevmode
-%     \begin{tabular}{lll} \hline \hline              
-%   $m-M$          & Method              & Reference      \\ \hline 
-%   31.31$\pm$0.27 & Cepheid             & \citet{sil98}  \\
-%   31.22$\pm$0.06 & I-band SBF          & \citet{jen98}  \\
-%   31.32$\pm$0.24 & K$^\prime$-band SBF & \citet{jen98}  \\
-%   30.94$\pm$0.33 & I-band TFR          & \citet{bure96} \\
-%   31.07$\pm$0.13 & V-band GCLF         & \citet{Koh96}  \\
-%   30.85$\pm$0.11 & I-band GCLF         & \citet{Koh96}  \\
-%   31.14$\pm$0.14 & PNLF                & \citet{mcm93}  \\ \hline
-%   \multicolumn{3}{l}{}                                             \\       
-%   \multicolumn{3}{l}{SBF: Surface Brightness Fluctuations}         \\
-%   \multicolumn{3}{l}{TFR: Tully-Fisher relation}                   \\
-%   \multicolumn{3}{l}{PNLF: Planetary Nebulae Luminosity Functions} \\
-%   \multicolumn{3}{l}{GCLF: Globular Cluster Luminosity Functions}  \\
-%     \end{tabular}
-%   \end{center}
-% \end{table}
-
-% %
-% %
-% \subsection{Fonts and character sizes}
-% %
-% %
-% One can typeset a text {\sffamily\bfseries\large in a large sans serif
-%   bold typeface.} Or one can use a {\slshape\tiny tiny slanted
-%   typeface.} For more information see ``The \LaTeX\ Companion'' page
-% 170 .
-
-
-% %
-% %
-% \subsection{\LaTeX\, info}\label{sec-webrefs}
-% %
-% %
-% \subsubsection{WEB info on \LaTeX}
-% There are links to some useful websites and \LaTeX\ resources are available
-% from: \\ {\tt http://star-www.dur.ac.uk/$\sim$balogh/latex/}.
-
-% \subsubsection{Books and guides for \LaTeX}
-% \begin{itemize}
-% \item {\it The LaTeX Companion}, by Michel Gossens, Frank Mittelbach, Alexander Samarin.
-% \item {\it LaTeX: A Document Preparation System -- User's Guide and
-%     Reference Manual}, by Leslie Lamport, 2nd ed
-% \item {\it The Not So Short Introduction to LaTeX2e}, Tobias Oetiker,
-%   see Starlink WEB page
-% \end{itemize}
-% \subsection{Bibilographies}
-
-% Bibliographies can be greatly facilitated with \LaTeX.  The best option is to keep a database
-% of references: see the file
-% http://star-www.dur.ac.uk/$\sim$balogh/latex/example.bib for an
-% example.  New entries to this file can be obtained directly from the
-% ADS article service: click on ``Bibtex entry for this abstract'' after
-% the abstract.
-
-% Use the apropriate bibliography style file (*.bst) to format the bibliography; read the first few
-% lines of this file for a description of usage.  Running ``bibtex'' on your document (see below)
-% will generate a *.bbl file with the appropriate references.  Alternatively, you can enter the
-% references directly, as described in the ``Not-so-short Guide''.  
-
-% Here are some examples of the different ways you can reference a source with the
-% {\it natbib.sty} style file.  See the header of that file for more options.
-% \begin{itemize}
-% \item A first attempt to model this was made by \citet{bar96}.
-% \item This did not agree with earlier models \citep{bar96}.
-% \item There are several models for this phenomenon \citep{bar96,bau96}
-% \item There are several models for this phenomenon \citep[e.g., ][]{bar96,bau96,infall}
-% \item Our model is better \citep[Fig. 5]{bau96}.
-% \item I want to do the references myself! (Baugh et al. 1996)\nocite{bau96}.
-% \end{itemize}
-%
-% References
-%
 \bibliography{example}
 
 \end{document}

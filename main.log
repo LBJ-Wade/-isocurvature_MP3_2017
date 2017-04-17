@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 APR 2017 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 APR 2017 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -377,17 +377,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Class revtex4-1 Warning: Assuming \noaffiliation for authors.
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+
 No file main.bbl.
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4891 strings out of 493014
- 63794 string characters out of 6133351
- 160357 words of memory out of 5000000
- 8359 multiletter control sequences out of 15000+600000
+ 4912 strings out of 493014
+ 64158 string characters out of 6133351
+ 164343 words of memory out of 5000000
+ 8377 multiletter control sequences out of 15000+600000
  10913 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,28p,642b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,28p,652b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
@@ -402,7 +409,7 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (2 pages, 166109 bytes).
+Output written on main.pdf (2 pages, 168273 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
