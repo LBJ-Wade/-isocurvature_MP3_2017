@@ -8,6 +8,7 @@
 
 \usepackage{xcolor}
 \newcommand\myworries[1]{\textcolor{red}{#1}}
+% \renewcommand\myworries[1]{}
 
 \begin{document}
 
@@ -32,7 +33,7 @@ of \LaTeX.  You can easily reformat it for different document or bibliography st
 \section{Methods}
 
 \subsection{Perturbations and Power Spectra}
-For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum  with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX). Like Planck, we specify these power spectra through two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$. We use the same uniform priors as Planck,
+For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX). Like Planck, we specify these power spectra through two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$. We use the same uniform priors as Planck,
 \begin{equation}
     \mathcal{P}_{\mathcal{RR}}^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \in (10^{-9}, 10^{-8}),
 \end{equation}
@@ -48,13 +49,11 @@ We follow Planck 2015 XX's convention of fixing $\mathcal{P}_{\mathcal{RI}}^{(2)
 & \mathcal{P}_{\mathcal{II}}^{(1)}, \mathcal{P}_{\mathcal{II}}^{(2)}, \mathcal{P}_{\mathcal{RI}}^{(1)}    \}
 \end{align}
 
-We could describe 
+\myworries{Should I describe the perturbation stuff of how the CLASS isocurvature code works?}
 
 
 
 \subsection{Forecasting}
-
-
 
 
 \begin{deluxetable*}{cccccc}[h]
@@ -70,7 +69,7 @@ We could describe
   Planck 2017 high\_l & 30 - 2500 & 0.65 & 10,7.1,5.0 & 65.0, 43.0, 66.0 & 103.0, 81.0, 134.0 \\
 \enddata 
 % \vspace{-0.8cm} 
-\tablecomments{These forecasts are based on blahblahblah.} 
+\tablecomments{These forecasts are based on \myworries{blahblahblah}.} 
 \end{deluxetable*}
 
 
