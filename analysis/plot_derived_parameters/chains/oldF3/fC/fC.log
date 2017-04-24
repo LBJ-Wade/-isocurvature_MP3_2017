@@ -1,0 +1,15 @@
+2017-03-18_1000000__10.txt	  Number of steps:8407	 Steps accepted:1637	 acc = 0.19	min(-loglike) = 5247.68
+2017-03-18_1000000__3.txt	  Number of steps:8827	 Steps accepted:2777	 acc = 0.31	min(-loglike) = 5247.40
+2017-03-18_1000000__6.txt	  Number of steps:8015	 Steps accepted:2046	 acc = 0.26	min(-loglike) = 5247.85
+2017-03-18_1000000__12.txt	  Number of steps:8084	 Steps accepted:1931	 acc = 0.24	min(-loglike) = 5247.60
+2017-03-18_1000000__5.txt	  Number of steps:7820	 Steps accepted:2122	 acc = 0.27	min(-loglike) = 5247.97
+2017-03-18_1000000__7.txt	  Number of steps:7910	 Steps accepted:2241	 acc = 0.28	min(-loglike) = 5247.37
+2017-03-18_1000000__11.txt	  Number of steps:8254	 Steps accepted:1719	 acc = 0.21	min(-loglike) = 5247.62
+2017-03-18_1000000__9.txt	  Number of steps:7986	 Steps accepted:2100	 acc = 0.26	min(-loglike) = 5247.94
+2017-03-18_1000000__8.txt	  Number of steps:7814	 Steps accepted:2255	 acc = 0.29	min(-loglike) = 5247.74
+2017-03-18_1000000__2.txt	  Number of steps:9703	 Steps accepted:1861	 acc = 0.19	min(-loglike) = 5247.68
+2017-03-18_1000000__4.txt	  Number of steps:7827	 Steps accepted:2219	 acc = 0.28	min(-loglike) = 5247.67
+2017-03-18_1000000__1.txt	  Number of steps:8794	 Steps accepted:2576	 acc = 0.29	min(-loglike) = 5247.88
+--> Total    number    of    steps: 99441
+--> Total number of accepted steps: 25484
+--> Minimum of -logLike           : 5247.37
