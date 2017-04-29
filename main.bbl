@@ -1,0 +1,62 @@
+\begin{thebibliography}{5}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{}\fi
+\expandafter\ifx\csname urllinklabel\endcsname\relax
+  \def\urllinklabel{[LINK]}\fi
+\expandafter\ifx\csname adsurllinklabel\endcsname\relax
+  \def\adsurllinklabel{[ADS]}\fi
+
+\bibitem[{{Baumann} {et~al.}(2009){Baumann}, {Jackson}, {Adshead}, {Amblard},
+  {Ashoorioon}, {Bartolo}, {Bean}, {Beltr{\'a}n}, {de Bernardis}, {Bird},
+  {Chen}, {Chung}, {Colombo}, {Cooray}, {Creminelli}, {Dodelson}, {Dunkley},
+  {Dvorkin}, {Easther}, {Finelli}, {Flauger}, {Hertzberg}, {Jones-Smith},
+  {Kachru}, {Kadota}, {Khoury}, {Kinney}, {Komatsu}, {Krauss}, {Lesgourgues},
+  {Liddle}, {Liguori}, {Lim}, {Linde}, {Matarrese}, {Mathur}, {McAllister},
+  {Melchiorri}, {Nicolis}, {Pagano}, {Peiris}, {Peloso}, {Pogosian},
+  {Pierpaoli}, {Riotto}, {Seljak}, {Senatore}, {Shandera}, {Silverstein},
+  {Smith}, {Vaudrevange}, {Verde}, {Wandelt}, {Wands}, {Watson}, {Wyman},
+  {Yadav}, {Valkenburg}, \& {Zaldarriaga}}]{baumann/etal:2009}
+{Baumann}, D., {Jackson}, M.~G., {Adshead}, P., {Amblard}, A., {Ashoorioon},
+  A., {Bartolo}, N., {Bean}, R., {Beltr{\'a}n}, M., {de Bernardis}, F., {Bird},
+  S., {Chen}, X., {Chung}, D.~J.~H., {Colombo}, L., {Cooray}, A., {Creminelli},
+  P., {Dodelson}, S., {Dunkley}, J., {Dvorkin}, C., {Easther}, R., {Finelli},
+  F., {Flauger}, R., {Hertzberg}, M.~P., {Jones-Smith}, K., {Kachru}, S.,
+  {Kadota}, K., {Khoury}, J., {Kinney}, W.~H., {Komatsu}, E., {Krauss}, L.~M.,
+  {Lesgourgues}, J., {Liddle}, A., {Liguori}, M., {Lim}, E., {Linde}, A.,
+  {Matarrese}, S., {Mathur}, H., {McAllister}, L., {Melchiorri}, A., {Nicolis},
+  A., {Pagano}, L., {Peiris}, H.~V., {Peloso}, M., {Pogosian}, L., {Pierpaoli},
+  E., {Riotto}, A., {Seljak}, U., {Senatore}, L., {Shandera}, S.,
+  {Silverstein}, E., {Smith}, T., {Vaudrevange}, P., {Verde}, L., {Wandelt},
+  B., {Wands}, D., {Watson}, S., {Wyman}, M., {Yadav}, A., {Valkenburg}, W., \&
+  {Zaldarriaga}, M. M.~G. {Jackson}, A.~{Kogut}L.~{Krauss}M.~{Zaldarriaga} \&
+  K.~{Smith}, 10--120
+
+
+\bibitem[{{Langlois}(1999)}]{langlois:1999}
+{Langlois}, D. 1999, \prd, 59, 123512
+
+
+\bibitem[{{Moodley} {et~al.}(2004){Moodley}, {Bucher}, {Dunkley}, {Ferreira},
+  \& {Skordis}}]{moodley/etal:2004}
+{Moodley}, K., {Bucher}, M., {Dunkley}, J., {Ferreira}, P.~G., \& {Skordis}, C.
+  2004, \prd, 70, 103520
+
+
+\bibitem[{{Planck Collaboration} {et~al.}(2014){Planck Collaboration}, {Ade},
+  {Aghanim}, {Armitage-Caplan}, {Arnaud}, {Ashdown}, {Atrio-Barandela},
+  {Aumont}, {Baccigalupi}, {Banday}, \& et~al.}]{planckXX:2013}
+{Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {Armitage-Caplan}, C.,
+  {Arnaud}, M., {Ashdown}, M., {Atrio-Barandela}, F., {Aumont}, J.,
+  {Baccigalupi}, C., {Banday}, A.~J., \& et~al. 2014, \aap, 571, A16
+
+
+\bibitem[{{Planck Collaboration} {et~al.}(2016){Planck Collaboration}, {Ade},
+  {Aghanim}, {Arnaud}, {Arroja}, {Ashdown}, {Aumont}, {Baccigalupi},
+  {Ballardini}, {Banday}, \& et~al.}]{planckXX:2015}
+{Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {Arnaud}, M., {Arroja},
+  F., {Ashdown}, M., {Aumont}, J., {Baccigalupi}, C., {Ballardini}, M.,
+  {Banday}, A.~J., \& et~al. 2016, \aap, 594, A20
+
+
+\end{thebibliography}
