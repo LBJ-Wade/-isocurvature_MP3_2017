@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{}\fi
@@ -6,6 +6,41 @@
   \def\urllinklabel{[LINK]}\fi
 \expandafter\ifx\csname adsurllinklabel\endcsname\relax
   \def\adsurllinklabel{[ADS]}\fi
+
+\bibitem[{{Abazajian} {et~al.}(2016){Abazajian}, {Adshead}, {Ahmed}, {Allen},
+  {Alonso}, {Arnold}, {Baccigalupi}, {Bartlett}, {Battaglia}, {Benson},
+  {Bischoff}, {Borrill}, {Buza}, {Calabrese}, {Caldwell}, {Carlstrom}, {Chang},
+  {Crawford}, {Cyr-Racine}, {De Bernardis}, {de Haan}, {di Serego Alighieri},
+  {Dunkley}, {Dvorkin}, {Errard}, {Fabbian}, {Feeney}, {Ferraro}, {Filippini},
+  {Flauger}, {Fuller}, {Gluscevic}, {Green}, {Grin}, {Grohs}, {Henning},
+  {Hill}, {Hlozek}, {Holder}, {Holzapfel}, {Hu}, {Huffenberger}, {Keskitalo},
+  {Knox}, {Kosowsky}, {Kovac}, {Kovetz}, {Kuo}, {Kusaka}, {Le Jeune}, {Lee},
+  {Lilley}, {Loverde}, {Madhavacheril}, {Mantz}, {Marsh}, {McMahon},
+  {Meerburg}, {Meyers}, {Miller}, {Munoz}, {Nguyen}, {Niemack}, {Peloso},
+  {Peloton}, {Pogosian}, {Pryke}, {Raveri}, {Reichardt}, {Rocha}, {Rotti},
+  {Schaan}, {Schmittfull}, {Scott}, {Sehgal}, {Shandera}, {Sherwin}, {Smith},
+  {Sorbo}, {Starkman}, {Story}, {van Engelen}, {Vieira}, {Watson}, {Whitehorn},
+  \& {Kimmy Wu}}]{CMB-S4:2016}
+{Abazajian}, K.~N., {Adshead}, P., {Ahmed}, Z., {Allen}, S.~W., {Alonso}, D.,
+  {Arnold}, K.~S., {Baccigalupi}, C., {Bartlett}, J.~G., {Battaglia}, N.,
+  {Benson}, B.~A., {Bischoff}, C.~A., {Borrill}, J., {Buza}, V., {Calabrese},
+  E., {Caldwell}, R., {Carlstrom}, J.~E., {Chang}, C.~L., {Crawford}, T.~M.,
+  {Cyr-Racine}, F.-Y., {De Bernardis}, F., {de Haan}, T., {di Serego
+  Alighieri}, S., {Dunkley}, J., {Dvorkin}, C., {Errard}, J., {Fabbian}, G.,
+  {Feeney}, S., {Ferraro}, S., {Filippini}, J.~P., {Flauger}, R., {Fuller},
+  G.~M., {Gluscevic}, V., {Green}, D., {Grin}, D., {Grohs}, E., {Henning},
+  J.~W., {Hill}, J.~C., {Hlozek}, R., {Holder}, G., {Holzapfel}, W., {Hu}, W.,
+  {Huffenberger}, K.~M., {Keskitalo}, R., {Knox}, L., {Kosowsky}, A., {Kovac},
+  J., {Kovetz}, E.~D., {Kuo}, C.-L., {Kusaka}, A., {Le Jeune}, M., {Lee},
+  A.~T., {Lilley}, M., {Loverde}, M., {Madhavacheril}, M.~S., {Mantz}, A.,
+  {Marsh}, D.~J.~E., {McMahon}, J., {Meerburg}, P.~D., {Meyers}, J., {Miller},
+  A.~D., {Munoz}, J.~B., {Nguyen}, H.~N., {Niemack}, M.~D., {Peloso}, M.,
+  {Peloton}, J., {Pogosian}, L., {Pryke}, C., {Raveri}, M., {Reichardt}, C.~L.,
+  {Rocha}, G., {Rotti}, A., {Schaan}, E., {Schmittfull}, M.~M., {Scott}, D.,
+  {Sehgal}, N., {Shandera}, S., {Sherwin}, B.~D., {Smith}, T.~L., {Sorbo}, L.,
+  {Starkman}, G.~D., {Story}, K.~T., {van Engelen}, A., {Vieira}, J.~D.,
+  {Watson}, S., {Whitehorn}, N., \& {Kimmy Wu}, W.~L. 2016, ArXiv e-prints
+
 
 \bibitem[{{Baumann} {et~al.}(2009){Baumann}, {Jackson}, {Adshead}, {Amblard},
   {Ashoorioon}, {Bartolo}, {Bean}, {Beltr{\'a}n}, {de Bernardis}, {Bird},
@@ -29,8 +64,24 @@
   E., {Riotto}, A., {Seljak}, U., {Senatore}, L., {Shandera}, S.,
   {Silverstein}, E., {Smith}, T., {Vaudrevange}, P., {Verde}, L., {Wandelt},
   B., {Wands}, D., {Watson}, S., {Wyman}, M., {Yadav}, A., {Valkenburg}, W., \&
-  {Zaldarriaga}, M. M.~G. {Jackson}, A.~{Kogut}L.~{Krauss}M.~{Zaldarriaga} \&
-  K.~{Smith}, 10--120
+  {Zaldarriaga}, M. 2009, 1141, 10
+
+
+\bibitem[{{Bucher} {et~al.}(2001){Bucher}, {Moodley}, \&
+  {Turok}}]{bucher/etal:2001}
+{Bucher}, M., {Moodley}, K., \& {Turok}, N. 2001, Physical Review Letters, 87,
+  191301
+
+
+\bibitem[{{Hinshaw} {et~al.}(2013){Hinshaw}, {Larson}, {Komatsu}, {Spergel},
+  {Bennett}, {Dunkley}, {Nolta}, {Halpern}, {Hill}, {Odegard}, {Page}, {Smith},
+  {Weiland}, {Gold}, {Jarosik}, {Kogut}, {Limon}, {Meyer}, {Tucker}, {Wollack},
+  \& {Wright}}]{hinshaw/etal:2013}
+{Hinshaw}, G., {Larson}, D., {Komatsu}, E., {Spergel}, D.~N., {Bennett}, C.~L.,
+  {Dunkley}, J., {Nolta}, M.~R., {Halpern}, M., {Hill}, R.~S., {Odegard}, N.,
+  {Page}, L., {Smith}, K.~M., {Weiland}, J.~L., {Gold}, B., {Jarosik}, N.,
+  {Kogut}, A., {Limon}, M., {Meyer}, S.~S., {Tucker}, G.~S., {Wollack}, E., \&
+  {Wright}, E.~L. 2013, \apjs, 208, 19
 
 
 \bibitem[{{Langlois}(1999)}]{langlois:1999}
@@ -41,6 +92,10 @@
   \& {Skordis}}]{moodley/etal:2004}
 {Moodley}, K., {Bucher}, M., {Dunkley}, J., {Ferreira}, P.~G., \& {Skordis}, C.
   2004, \prd, 70, 103520
+
+
+\bibitem[{{Muya Kasanda} \& {Moodley}(2014)}]{kasanda/moodley:2014}
+{Muya Kasanda}, S. \& {Moodley}, K. 2014, \jcap, 12, 041
 
 
 \bibitem[{{Planck Collaboration} {et~al.}(2014){Planck Collaboration}, {Ade},
@@ -57,6 +112,10 @@
 {Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {Arnaud}, M., {Arroja},
   F., {Ashdown}, M., {Aumont}, J., {Baccigalupi}, C., {Ballardini}, M.,
   {Banday}, A.~J., \& et~al. 2016, \aap, 594, A20
+
+
+\bibitem[{{Smith} \& {Grin}(2016)}]{smith/grin:2016}
+{Smith}, T.~L. \& {Grin}, D. 2016, \prd, 94, 103517
 
 
 \end{thebibliography}

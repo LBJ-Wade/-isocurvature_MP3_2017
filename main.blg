@@ -5,75 +5,46 @@ The style file: astroads.bst
 Database file #1: mainNotes.bib
 Database file #2: mybib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-1 is an integer literal, not a string, for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-ptr=9, stack=
-A.~{Fraisse}
-J.~{Dunkley}
-A.~{Cooray}
-D.~{Baumann}
-S.~{Dodelson}
-American Institute of Physics Conference Series, ed. 
-American Institute of Physics Conference Series, Vol. 1141, 
-in 
-2009
----the literal stack isn't empty for entry baumann/etal:2009
-while executing---line 1627 of file astroads.bst
-You've used 5 entries,
+Warning--empty journal in baumann/etal:2009
+You've used 10 entries,
             3025 wiz_defined-function locations,
-            662 strings with 6708 characters,
-and the built_in function-call counts, 5785 in all, are:
-= -- 353
-> -- 754
-< -- 2
-+ -- 276
-- -- 271
-* -- 657
-:= -- 1121
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 107
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 108
-empty$ -- 168
-format.name$ -- 285
-if$ -- 1017
+            691 strings with 9422 characters,
+and the built_in function-call counts, 12141 in all, are:
+= -- 733
+> -- 1646
+< -- 3
++ -- 613
+- -- 603
+* -- 1406
+:= -- 2391
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 241
+chr.to.int$ -- 10
+cite$ -- 11
+duplicate$ -- 197
+empty$ -- 296
+format.name$ -- 635
+if$ -- 2101
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 4
-newline$ -- 30
-num.names$ -- 21
-pop$ -- 114
+missing$ -- 10
+newline$ -- 50
+num.names$ -- 40
+pop$ -- 253
 preamble$ -- 1
-purify$ -- 107
+purify$ -- 241
 quote$ -- 0
-skip$ -- 96
+skip$ -- 171
 stack$ -- 0
-substring$ -- 136
-swap$ -- 8
-text.length$ -- 1
+substring$ -- 230
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 45
-warning$ -- 0
-while$ -- 22
+type$ -- 90
+warning$ -- 1
+while$ -- 39
 width$ -- 0
-write$ -- 59
-(There were 10 error messages)
+write$ -- 107
+(There was 1 warning)
