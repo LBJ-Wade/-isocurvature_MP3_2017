@@ -5,7 +5,7 @@
 \usepackage{epsfig}
 \usepackage{amsmath}
 \usepackage{natbib}
-
+\usepackage{afterpage}
 \usepackage{xcolor}
 \newcommand\writingnote[1]{\textcolor{red}{#1}}
 % \renewcommand\writingnote[1]{}
@@ -185,7 +185,8 @@ In addition to the $\Lambda$CDM and isocurvature parameters, we need two nuisanc
 
 The bestfit values are $\pii^1 = something$, $\pii^2 = something$.
 
-\begin{figure*}
+\afterpage{\clearpage}
+\begin{figure*}[p]
 % \epsscale{.80}
 \plotone{figures/forecast_all_overplotted.pdf}
 \caption{Isocurvature constraints for future CMB experiments.\label{fig:triangleplots}}
@@ -193,7 +194,8 @@ The bestfit values are $\pii^1 = something$, $\pii^2 = something$.
 
 
 
-\begin{figure*}
+\afterpage{\clearpage}
+\begin{figure*}[p]
 % \epsscale{.80}
 \plotone{figures/all_derived_forecast.pdf}
 \caption{Derived parameter estimates for future CMB experiments.\label{fig:derivedparams}}
