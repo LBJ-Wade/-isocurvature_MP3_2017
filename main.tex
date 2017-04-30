@@ -27,13 +27,13 @@
 
 
 \begin{abstract}
-We provide forecasts of cold dark matter isocurvature (CDI) constraints for combinations of Planck, CMB S4, and PIXIE. Using MCMC methods on fiducial power spectra, we find substantial improvements in the measurement of the large scale isocurvature power. 
+We provide forecasts of cold dark matter isocurvature (CDI) constraints for combinations of Planck, CMB S4, and PIXIE. Using MCMC methods on fiducial power spectra, we find substantial improvements in the measurement of the large scale isocurvature power.
 \end{abstract}
 
 %Section heading
 \section{Introduction}
 
-The primordial cosmological perturbations are primarily adiabatic fluctuations, which come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}.  Several scenarios allow for spatially varying equations of state or initial velocity fields, producing isocurvature perturbations. 
+The primordial cosmological perturbations are primarily adiabatic fluctuations, which come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}.  Several scenarios allow for spatially varying equations of state or initial velocity fields, producing isocurvature perturbations.
 
 \writingnote{Motivations.}
 Inflation with a single scalar field and slow-roll initial conditions excites only adiabatic perturbations. However, multiple field inflation can produce an isocurvature spectrum as well as an adiabatic spectrum, with possible correlations between the two \citep{langlois:1999}. Commonly studied isocurvature perturbations arise from variations between photon density, cold dark matter (CDM) density, neutrino density (NID), and neutrino velocity (NIV). Quantum fluctuations can also lead to the curvaton scenario, which also generating isocurvature perturbations correlated with the adiabatic modes \citep{baumann/etal:2009}. Some string theory axions can also carry isocurvature fluctuations from quantum fluctuations, with an axion decay to dark matter leading to uncorrelated adiabatic and CDM isocurvature perturbations.
@@ -42,10 +42,10 @@ In this paper we forecast constraints on CDM isocurvature using MCMC on fiducial
 
 
 \writingnote{Current Constraints.}
-Current measurements of isocurvature are consistent with fully adiabatic primordial density fluctuations. Previous constraints on isocurvature constraints have come from precision measurements of the CMB power spectrum, with WMAP \citep{moodley/etal:2004} and Planck \citep{planckXXII:2013}. Joint WMAP and BAO constraints on fully uncorrelated and anticorrelated modes put upper bounds on the isocurvature at less than a percent \citep{hinshaw/etal:2013}. \writingnote{Should I include actual numbers?} The tightest constraints on isocurvature \citep{planckXX:2015} currently limit the amplitude of CDM isocurvature fluctuations to a few percent at large scales ($k=0.002$ Mpc$^{-1}$), and 30-50\% at small scales ($k=0.1$ Mpc$^{-1}$). These use polarization measurements over the Planck range of $l=2-2508$ for TT and $2-1996$ for TE and EE. 
+Current measurements of isocurvature are consistent with fully adiabatic primordial density fluctuations. Previous constraints on isocurvature constraints have come from precision measurements of the CMB power spectrum, with WMAP \citep{moodley/etal:2004} and Planck \citep{planckXXII:2013}. Joint WMAP and BAO constraints on fully uncorrelated and anticorrelated modes put upper bounds on the isocurvature at less than a percent \citep{hinshaw/etal:2013}. \writingnote{Should I include actual numbers?} The tightest constraints on isocurvature \citep{planckXX:2015} currently limit the amplitude of CDM isocurvature fluctuations to a few percent at large scales ($k=0.002$ Mpc$^{-1}$), and 30-50\% at small scales ($k=0.1$ Mpc$^{-1}$). These use polarization measurements over the Planck range of $l=2-2508$ for TT and $2-1996$ for TE and EE.
 
 
-\writingnote{Recent Forecasting Papers.} 
+\writingnote{Recent Forecasting Papers.}
 \cite{bucher/etal:2001} forecasted isocurvature constraints for Planck, the current best constraints on isocurvature using a Fisher matrix analysis. These forecasts have been shown to be consistent with actual measurements. Simulated forecasts for only CMB-S4 \citep{CMB-S4:2016} predict increases in sensitivity by a factor of 3-6 over Planck. For the curvaton scenario, \cite{smith/grin:2016} make forecasts using an MCMC analysis for a cosmic-variance limited experiment. \cite{kasanda/moodley:2014} make isocurvature forecasts for the PRISM experiment and investigate the effects of the CMB lensing potential in-depth.
 
 
@@ -75,8 +75,8 @@ Following \cite{planckXX:2015}, we parametrize $\prr$, $\pri$, and $\pii$ by cho
 & +
 \left( \frac{\ln(k) - \ln(k_1)}{\ln(k_2) - \ln(k_1)}\right) \ln \left( \mathcal{P}_{ab}^2 \right) \bigg].
 \end{align*}
-Thus one can recover the primordial isocurvature tilt by computing the log-log slope, 
-\begin{equation} n_{\mathcal{I}\mathcal{I}}  =  \frac{\log( \pii^2 / \pii^1 )}{\log ( k_2 / k_1 )}. \end{equation}
+Thus one can recover the tilt by computing the log-log slope,
+\begin{equation} n_{\text{ab}}  =  \frac{\log( \mathcal{P}_{\text{ab}}^2 / \mathcal{P}_{\text{ab}}^1 )}{\log ( k_2 / k_1 )}. \end{equation}
 
 For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX).  We use the same uniform priors as Planck,
 \begin{equation}
@@ -88,7 +88,20 @@ For a set of the standard cosmological parameters with the additional isocurvatu
 \begin{equation}
     \pri^{(1)} \in (-10^{-8}, 10^{-8}).
 \end{equation}
-We follow Planck 2015 XX's convention of fixing $\pri^{(2)}$ from these parameters. Then we sample over the $\Lambda$CDM scenario, but replace $A_s$ and $n_s$ with $\prr^{(1)}$,  $\prr^{(2)}$ and add the three isocurvature parameters $\pii^{(1)}$, $\pii^{(2)}$, $\pri^{(1)}$.
+We follow Planck 2015 XX's convention of only sampling over $\pri^1$ and fixing $\pri^{(2)}$ by restricting the correlation fraction to be scale-independent,
+\begin{equation}
+\cos \Delta_{\text{ab}} = \frac{\mathcal{P}_{\text{ab}}}{(\mathcal{P}_{\text{aa}} \mathcal{P}_{\text{bb}})^{1/2}} \in (-1,1),
+\end{equation}
+so that
+\begin{equation}
+\mathcal{P}_{\text{ab}}^{(2)} = \mathcal{P}_{\text{ab}}^{(1)} \frac{\left(\mathcal{P}_{\text{aa}}^{(2)} \mathcal{P}_{\text{bb}}^{(2)} \right)^{1/2}}{ \left(\mathcal{P}_{\text{aa}}^{(1)} \mathcal{P}_{\text{bb}}^{(1)} \right)^{1/2}}.
+\end{equation}
+We also present the results in terms of derived parameters following \cite{planckXX:2015}, defining the primordial isocurvature fraction as
+\begin{equation}
+\beta_{\text{iso}}(k) = \frac{\pii(k)}{\prr(k) + \pii(k)}.
+\end{equation}
+
+Then we sample over the $\Lambda$CDM scenario, but replace $A_s$ and $n_s$ with $\prr^{(1)}$,  $\prr^{(2)}$ and add the three isocurvature parameters $\pii^{(1)}$, $\pii^{(2)}$, $\pri^{(1)}$.
 \begin{align}
 \{ \Omega_b h^2, \Omega_c h^2, \theta_A, &\tau_{reio}, \prr^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \\
 & \pii^{(1)}, \pii^{(2)}, \pri^{(1)}    \}
@@ -106,36 +119,43 @@ For CMB-S4, we also include a multiplicative factor for atmospheric noise, in th
 N_l = N_0 \left( 1 + \left(\frac{l}{l_{\text{knee}}}\right)^{\alpha} \right)
 \end{equation}
 
-We then use this $N_l$ with a fiducial power spectrum generated in CLASS with the Planck 2015 cosmological parameters \citep{planckXIII:2016}. We investigate both a fiducial spectrum with zero isocurvature, and one a relatively extreme model which is still consistent with the Planck constraints. 
+We then use this $N_l$ with a fiducial power spectrum generated in CLASS with the Planck 2015 cosmological parameters \citep{planckXIII:2016}. We investigate both a fiducial spectrum with zero isocurvature, and one a relatively extreme model which is still consistent with the Planck constraints.
 
 
 \begin{deluxetable*}{cccccc}
 \label{table:forecasts}
-\tabletypesize{\footnotesize} 
-\tablecolumns{6} 
-\tablewidth{0pt} 
-\tablecaption{ Forecasting Parameters \label{table:forecasts}} 
-\tablehead{ 
+\tabletypesize{\footnotesize}
+\tablecolumns{6}
+\tablewidth{0pt}
+\tablecaption{ Forecasting Parameters \label{table:forecasts}}
+\tablehead{
  \colhead{Experiment}     & \colhead{$l_{min}$ - $l_{max}$}  & \colhead{$f_{\text{sky}}$} & \colhead{$\theta_{\text{FWHM}}$} & \colhead{$\sigma_T$ ($\mu$K arcmin)} &  \colhead{$\sigma_P$ ($\mu$K arcmin)} }
- \startdata 
+ \startdata
   CMB-S4          & 30-3000 & 0.40 & 3.0 & 1.0 & 1.4\\
   PIXIE           & 2 - 150 & 0.8 & 120 & 2.9 & 4.0 \\
-  Planck 2015 high\_l + pol & 30 - 2500 & 0.65 & 10,7.1,5.0 & 65.0, 43.0, 66.0 & 103.0, 81.0, 134.0 \\
-\enddata 
-% \vspace{-0.8cm} 
-\tablecomments{Noise parameters for CMB-S4 \citep{CMB-S4:2016}, PIXIE (\writingnote{FIND CITATION}), and Planck + Planck Polarization \citep{planckXX:2015}. The three Planck noise levels come from three channels at 70, 100 and 143 GHz respectively.} 
+  Planck 2015 high\_l + pol & 2 - 2500 & 0.65 & 10,7.1,5.0 & 65.0, 43.0, 66.0 & 103.0, 81.0, 134.0 \\
+\enddata
+% \vspace{-0.8cm}
+\tablecomments{Noise parameters for CMB-S4 \citep{CMB-S4:2016}, PIXIE (\writingnote{FIND CITATION}), and Planck + Planck Polarization \citep{planckXX:2015}. The three Planck noise levels come from three channels at 70, 100 and 143 GHz respectively.}
 \end{deluxetable*}
 
-We find constraints for the isocurvature parameters using these likelihood parameters and Markov Chain Monte Carlo (MCMC) sampling. We use Monte Python, a Python-based implementation of Metropolis-Hastings and interface for cosmological likelihoods. 
+We find constraints for the isocurvature parameters using these likelihood parameters and Markov Chain Monte Carlo (MCMC) sampling. We use Monte Python, a Python-based implementation of Metropolis-Hastings and interface for cosmological likelihoods. We use six different combinations of experiments.
+\begin{enumerate}
+\item Planck T ($2 \leq l \leq 2500$), \\ Planck P ($2 \leq l \leq 30$).
+\item Planck T+P ($2 \leq l \leq 2500$).
+\item Planck T+P ($2 \leq l \leq 30$,) \\CMB-S4 ($30 < l \leq 3000$).
+\item PIXIE over ($2 \leq l \leq 150$),\\ Planck T+P ($150 < l  \leq 2500$).
+\item PIXIE over ($2 \leq l \leq 150$),\\ CMB-S4 ($150 < l  \leq 2500$).
+\end{enumerate}
 
 \subsection{ACTPol Likelihood}
 
-We use the same methods as in Louis et al. 2016 for the ACT likelihood, marginalizing the ACTPol spectrum from $350 < l < 4000$ to construct a Gaussian likelihood function with an overall calibration parameter. We produce our parameter constraints by summing this with the Planck 2015 log-likelihood. We use the public CMB-marginalized 'plik-lite' Planck 2015 likelihood which uses TT for $30 \leq l \leq 2508$, a likelihood generated from CMB lensing, and a joint TT, EE, BB, and TE likelihood for the range $2 \leq l < 30$. 
+We use the same methods as in Louis et al. 2016 for the ACT likelihood, marginalizing the ACTPol spectrum from $350 < l < 4000$ to construct a Gaussian likelihood function with an overall calibration parameter. We produce our parameter constraints by summing this with the Planck 2015 log-likelihood. We use the public CMB-marginalized 'plik-lite' Planck 2015 likelihood which uses TT for $30 \leq l \leq 2508$, a likelihood generated from CMB lensing, and a joint TT, EE, BB, and TE likelihood for the range $2 \leq l < 30$.
 
 \begin{align}
 -2 \ln L = &- 2 \ln L(\text{ACTPol}) \\
-&-2 \ln L(\text{Planck TT}_{30 < l < 2508}) \\ 
-&-2 \ln L(\text{Planck TEB}_{2 \leq l < 30})\\ 
+&-2 \ln L(\text{Planck TT}_{30 < l < 2508}) \\
+&-2 \ln L(\text{Planck TEB}_{2 \leq l < 30})\\
 &-2 \ln L(\text{Planck Lensing})
 \end{align}
 
@@ -148,6 +168,7 @@ In addition to the $\Lambda$CDM and isocurvature parameters, we need two nuisanc
 
 \section{Results}
 
+The bestfit values are $\pii^1 = something$, $\pii^2 = something$.
 
 \begin{figure*}
 % \epsscale{.80}
@@ -180,5 +201,3 @@ In addition to the $\Lambda$CDM and isocurvature parameters, we need two nuisanc
 \bibliography{mybib}
 
 \end{document}
-
-
