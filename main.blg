@@ -6,45 +6,45 @@ Database file #1: mainNotes.bib
 Database file #2: mybib.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in baumann/etal:2009
-You've used 12 entries,
+You've used 11 entries,
             3025 wiz_defined-function locations,
-            701 strings with 9917 characters,
-and the built_in function-call counts, 13491 in all, are:
-= -- 831
-> -- 1782
+            694 strings with 9733 characters,
+and the built_in function-call counts, 13005 in all, are:
+= -- 789
+> -- 1754
 < -- 3
-+ -- 664
-- -- 651
-* -- 1546
-:= -- 2649
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 265
-chr.to.int$ -- 11
-cite$ -- 13
-duplicate$ -- 237
-empty$ -- 354
-format.name$ -- 689
-if$ -- 2349
++ -- 654
+- -- 642
+* -- 1505
+:= -- 2562
+add.period$ -- 11
+call.type$ -- 11
+change.case$ -- 258
+chr.to.int$ -- 10
+cite$ -- 12
+duplicate$ -- 217
+empty$ -- 322
+format.name$ -- 677
+if$ -- 2251
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 58
-num.names$ -- 48
-pop$ -- 279
+missing$ -- 11
+newline$ -- 54
+num.names$ -- 44
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 265
+purify$ -- 258
 quote$ -- 0
-skip$ -- 200
+skip$ -- 181
 stack$ -- 0
-substring$ -- 272
+substring$ -- 242
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 99
 warning$ -- 1
-while$ -- 47
+while$ -- 43
 width$ -- 0
-write$ -- 127
+write$ -- 117
 (There was 1 warning)
