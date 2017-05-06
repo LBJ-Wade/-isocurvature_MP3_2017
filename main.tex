@@ -10,16 +10,19 @@
 \newcommand\writingnote[1]{\textcolor{red}{#1}}
 % \renewcommand\writingnote[1]{}
 % \renewcommand\actpol[1]{}
+\newcommand{\LCDM}   {$\Lambda$CDM}
+\newcommand{\planck}{{\it Planck}}
+\newcommand{\wmap}{{\it WMAP}}
 
 \DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
-\newcommand\prr{ \mathcal{P}_{\mathcal{R}\mathcal{R}} }
-\newcommand\pri{ \mathcal{P}_{\mathcal{R}\mathcal{I}} }
-\newcommand\pii{ \mathcal{P}_{\mathcal{I}\mathcal{I}} }
+\newcommand{\prr}{ \mathcal{P}_{\mathcal{R}\mathcal{R}} }
+\newcommand{\pri}{ \mathcal{P}_{\mathcal{R}\mathcal{I}} }
+\newcommand{\pii}{ \mathcal{P}_{\mathcal{I}\mathcal{I}} }
 
 
 \begin{document}
 
-\title{Isocurvature Forecasts for Planck, CMB S4, and PIXIE, and Maybe Constraints for ACTPol}
+\title{Future constraints on isocurvature fluctuations from the Cosmic Microwave Background}
 \author{Zack Li and Jo Dunkley}
 \date{\today}
 %\maketitle
@@ -33,31 +36,31 @@ We provide forecasts of cold dark matter isocurvature (CDI) constraints for comb
 %Section heading
 \section{Introduction}
 
-The primordial cosmological perturbations are primarily adiabatic fluctuations, which come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}.  Several scenarios allow for spatially varying equations of state or initial velocity fields, producing isocurvature perturbations.
+Current cosmological data support the standard `\LCDM' cosmological model, a flat universe with primordial fluctuations that are scalar, adiabatic, and Gaussian, and are described by a power spectrum with an amplitude and power-law spectral index \citep{planck}. The adiabatic nature of the fluctuations come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}. The physical origin of the primordial fluctuations is still not known however, and the most general perturbations include not only adiabatic fluctuations, but also isocurvature perturbations, with spatially varying equations of state or initial velocity fields \citep{adiab}. A non-zero level of isocurvature fluctuations is still allowed by current data.
 
-\writingnote{Motivations.}
-Inflation with a single scalar field and slow-roll initial conditions excites only adiabatic perturbations. However, multiple field inflation can produce an isocurvature spectrum as well as an adiabatic spectrum, with possible correlations between the two \citep{langlois:1999}. Commonly studied isocurvature perturbations arise from variations between photon density, cold dark matter (CDM) density, neutrino density (NID), and neutrino velocity (NIV). CDM isocurvature is much more physically well-motivated, as there are few scenarios which can generate neutrino isocurvature. Quantum fluctuations can lead to the curvaton scenario, which generates CDM isocurvature perturbations correlated with the adiabatic modes \citep{baumann/etal:2009}. Some string theory axions can also carry isocurvature fluctuations from quantum fluctuations, with an axion decay to dark matter leading to uncorrelated adiabatic and CDM isocurvature perturbations.
+Isocurvature fluctuations can take the form of variations between the photon and the cold dark matter (CDM) density, the photon and baryon density, or the photon and neutrino density \citep{moodley/bucher/turok:2000}. Variations between the photon velocity and neutrino velocity are also possible. Within an inflation scenario with a single scalar field and slow-roll initial conditions, only adiabatic perturbations are expected. However, isocurvature fluctuations could be generated from a variety of physical scenarios including multiple field inflation \citep{langlois:1999}, and the curvaton scenario
+%which generates CDM isocurvature perturbations correlated with the adiabatic modes
+\citep{baumann/etal:2009}. Some string theory axions can also generate isocurvature fluctuations from quantum fluctuations, with axion decay to dark matter leading to uncorrelated adiabatic and CDM isocurvature perturbations \cite{axion}. (Mention compensated isocurvature). Early universe models other than inflation could also generate isocurvature.
 
-In this paper we forecast constraints on CDM isocurvature using MCMC on fiducial power spectra and simulations of future CMB experiments. The CDM isocurvature contribution to TT, TE, and EE power spectra is out of phase with the adiabatic perturbations in $C_l$, so improvements in CMB polarization measurements can considerably improve upon current constraints (see Section \writingnote{X.X}). CMB-S4, a next-generation ground-based CMB experiment planned for observations in 2021, will involve \~500,000 detectors and provide polarization noise levels with almost a factor of 100 improvement over Planck over $30 \leq l \leq 3000$. PIXIE, a full-sky space telescope proposed for \writingnote{20XX}, will offer similar levels of improvement in polarization but for large scales $2 \leq l < 150$. 
+Data from the \wmap\ satellite, supplemented by Baryon Acoustic Oscillation data, have been used to put upper bounds on the fractional contribution of CDI to the primordial power at less than a percent \citep{hinshaw/etal:2013}, assuming a fixed power-law index and considering either fully uncorrelated or anticorrelated modes. This CDI mode is considered the most physically well-motivated, and is observationally equivalent to baryon isocurvature. Combinations of different isocurvature modes were allowed at a much higher degree \cite{bean}. The \planck\ data reduce the limits on fully correlated power-law CDI to XX, and for a more general partially correlated model limit the fractional power  to be less than 2\% at large scales ($k=0.002$ Mpc$^{-1}$), and less than 52\% at smaller scales ($k=0.1$ Mpc$^{-1}$ \citep{planckXX:2015}.
+%These use polarization measurements over the Planck range of $l=2-2508$ for TT and $2-1996$ for TE and EE.
+
+There is still scope for improvement. The isocurvature temperature and polarization power spectra are out of phase with the adiabatic perturbations, so improved CMB polarization measurements can considerably tighten constraints. CMB-S4 is a next-generation ground-based CMB experiment planned for observations in the 2020s, involving hundred of thousands of detectors. It will reduce the polarization noise levels over \planck\ by almost a factor of one hundred, reaching to small angular scales. Proposed low-resolution satellites including PIXIE and LiteBIRD will offer similar improvement for larger angular scales \citep{pixie,litebird}. Forecasts for CMB-S4  predict an increase in sensitivity by a factor of 3-6 over \planck\ for the curvaton scenario \citep{CMB-S4:2016}. \cite{kasanda/moodley:2014} forecast the capabilities of a future CMB satellite, and \cite{smith/grin:2016} forecast that a cosmic-variance limited experiment could reach XX. 
+%and investigate the effects of the CMB lensing potential.
+
+In this paper we explore how well the degree of CDI can be constrained with a CMB-S4 level experiment and the proposed PIXIE satellite.  We consider the general CDI model explored by \citet{planck_inflation}, which allows partial correlation of modes and a variable spectral index. 
+ %We improve upon these results by including an atmospheric model calibrated for the Atacama desert for CMB-S4, and choose a more general isocurvature model.  While we do not involve PRISM, we do explore combinations of Planck, S4, and PIXIE.
+In Section \ref{methods}, we describe the effect of isocurvature on power spectra, our chosen parametrization, and the details of the experimental specifications used in the forecasts. In Section \ref{results}, we present our forecasted constraints, and discuss in section \ref{discussion}.
+%we provide some conclusions about the science yield from each experiment and the whether future measurements will be able to differentiate between models for the origin of the primordial density fluctuations.  
+
+
+\section{Methods}\label{methods}
 
 \begin{figure}[h]
 \includegraphics[width=0.45\textwidth]{figures/isocurvature_fiducial_spectra_contributions.pdf}
 % \plotone{figures/isocurvature_fiducial_spectra_contributions.pdf}
 \caption{Scaled adiabatic and isocurvature contributions to $\mathcal{D}_l$ for a model with nonzero isocurvature consistent with the Planck measurements. \writingnote{overplot ACTPol error bars, plot adiabatic normally and scale isocurvature contributions by 100}\label{fig:effects}}
 \end{figure}
-
-
-\writingnote{Current Constraints.}
-Current measurements of isocurvature are consistent with fully adiabatic primordial density fluctuations. Previous constraints on isocurvature constraints have come from precision measurements of the CMB power spectrum, with WMAP \citep{moodley/etal:2004} and Planck \citep{planckXXII:2013}. Joint WMAP and BAO constraints on fully uncorrelated and anticorrelated modes put upper bounds on the isocurvature at less than a percent \citep{hinshaw/etal:2013}. \writingnote{Should I include actual numbers?} The tightest constraints on isocurvature using both Planck temperature and polarization \citep{planckXX:2015} currently limit the amplitude of CDM isocurvature fluctuations to 2\% at large scales ($k=0.002$ Mpc$^{-1}$), and 51.8\% at small scales ($k=0.1$ Mpc$^{-1}$). These use polarization measurements over the Planck range of $l=2-2508$ for TT and $2-1996$ for TE and EE.
-
-
-\writingnote{Recent Forecasting Papers.}
-Simulated forecasts for only CMB-S4 \citep{CMB-S4:2016} predict increases in sensitivity by a factor of 3-6 over Planck for only the curvaton scenario. \cite{smith/grin:2016} make forecasts using an MCMC analysis for a cosmic-variance limited experiment also for the curvaton scenario. We improve upon these results by including an atmospheric model calibrated for the Atacama desert for CMB-S4, and choose a more general isocurvature model. \cite{kasanda/moodley:2014} make isocurvature forecasts for the PRISM experiment and investigate the effects of the CMB lensing potential in-depth. While we do not involve PRISM, we do explore combinations of Planck, S4, and PIXIE. \writingnote{should the PRISM citation be included?}
-
-\writingnote{What's in each section.} In Section \ref{methods}, we describe the effect of isocurvature on power spectra, and our parametrization of it when sampling. We also discuss how our forecasts are implemented with respect to instrument properties and the resulting noise model. In Section \ref{results}, we present our forecasted isocurvature constraints and discuss how different combinations of experiments lead to different sensitivities, and briefly discuss the impact of introducing the ACTPol Season 2 polarization data. In Section \ref{discussion} we provide some conclusions about the science yield from each experiment and the whether future measurements will be able to differentiate between models for the origin of the primordial density fluctuations.  
-
-
-\section{Methods}\label{methods}
 
 
 \subsection{Perturbations and Power Spectra}\label{powerspectra}
