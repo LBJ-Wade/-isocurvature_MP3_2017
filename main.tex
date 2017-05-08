@@ -36,7 +36,7 @@ We provide forecasts of cold dark matter isocurvature (CDI) constraints for comb
 %Section heading
 \section{Introduction}
 
-Current cosmological data support the standard `\LCDM' cosmological model, a flat universe with primordial fluctuations that are scalar, adiabatic, and Gaussian, and are described by a power spectrum with an amplitude and power-law spectral index \citep{planck}. The adiabatic nature of the fluctuations come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}. The physical origin of the primordial fluctuations is still not known however, and the most general perturbations include not only adiabatic fluctuations, but also isocurvature perturbations, with spatially varying equations of state or initial velocity fields \citep{adiab}. A non-zero level of isocurvature fluctuations is still allowed by current data.
+Current cosmological data support the standard `\LCDM' cosmological model, a flat universe with primordial fluctuations that are scalar, adiabatic, and Gaussian, and are described by a power spectrum with an amplitude and power-law spectral index \citep{planckXX:2015}. The adiabatic nature of the fluctuations come from a spatially uniform equation of state and initial velocity field and lock together the density perturbations of the different components \citep{planckXXII:2013}. The physical origin of the primordial fluctuations is still not known however, and the most general perturbations include not only adiabatic fluctuations, but also isocurvature perturbations, with spatially varying equations of state or initial velocity fields \citep{adiab}. A non-zero level of isocurvature fluctuations is still allowed by current data.
 
 Isocurvature fluctuations can take the form of variations between the photon and the cold dark matter (CDM) density, the photon and baryon density, or the photon and neutrino density \citep{moodley/bucher/turok:2000}. Variations between the photon velocity and neutrino velocity are also possible. Within an inflation scenario with a single scalar field and slow-roll initial conditions, only adiabatic perturbations are expected. However, isocurvature fluctuations could be generated from a variety of physical scenarios including multiple field inflation \citep{langlois:1999}, and the curvaton scenario
 %which generates CDM isocurvature perturbations correlated with the adiabatic modes
@@ -143,7 +143,7 @@ We then use this $N_l$ with a fiducial power spectrum generated in CLASS with th
 \tabletypesize{\footnotesize}
 \tablecolumns{6}
 \tablewidth{0pt}
-\tablecaption{ Forecasting Parameters \label{table:forecasts}}
+\tablecaption{ Forecasting Parameters }
 \tablehead{
  \colhead{Experiment}     & \colhead{$l_{min}$ - $l_{max}$}  & \colhead{$f_{\text{sky}}$} & \colhead{$\theta_{\text{FWHM}}$} & \colhead{$\sigma_T$ ($\mu$K arcmin)} &  \colhead{$\sigma_P$ ($\mu$K arcmin)} }
  \startdata
@@ -165,12 +165,50 @@ We find constraints for the isocurvature parameters using these likelihood param
 \end{enumerate}
 
 
-
-
-
 \section{Results}\label{results}
 
-The bestfit values are $\pii^1 = something$, $\pii^2 = something$.
+\begin{deluxetable}{ccc}[h]
+\tabletypesize{\footnotesize}
+\tablecolumns{3}
+\tablewidth{0pt}
+\tablecaption{ Fiducial Power Spectrum Cosmology \label{table:fiducialparameters}}
+\tablehead{
+ \colhead{}     & \colhead{Adiabatic}  & \colhead{Nonzero Isocurvature} }
+ \startdata
+  $\Omega_b$ & XX & XX \\
+  $\Omega_c$ & XX & XX \\
+  $\theta$ & XX & XX \\
+  $\tau$ & XX & XX \\
+  $\prr^1$ & XX & XX \\
+  $\prr^2$ & XX & XX \\
+  $\pri^1$ & XX & XX \\
+\enddata
+% \vspace{-0.8cm}
+\tablecomments{Cosmological parameters from \citep{planckXX:2015} for our two fiducial models.}
+\end{deluxetable}
+
+
+\begin{deluxetable}{cccc}[h]
+\tabletypesize{\footnotesize}
+\tablecolumns{4}
+\tablewidth{0pt}
+\tablecaption{ Sampling Results \label{table:bestfits}}
+\tablehead{
+ \colhead{}     & \colhead{Forecast 1}  & \colhead{Forecast 2} & \colhead{Forecast 3} }
+ \startdata
+  $\Omega_b$ & XX $\pm YY$ & XX $\pm YY$ & XX $\pm YY$\\
+  $\Omega_c$ & XX $\pm YY$ & XX $\pm YY$ & XX $\pm YY$\\
+  $\theta$ & XX  $\pm YY$ & XX  $\pm YY$ & XX $\pm YY$\\
+  $\tau$ & XX $\pm YY$  & XX $\pm YY$ & XX $\pm YY$\\
+  $\prr^1$ & XX $\pm YY$ & XX $\pm YY$ & XX $\pm YY$\\
+  $\prr^2$ & XX $\pm YY$ & XX $\pm YY$ & XX $\pm YY$\\
+  $\pri^1$ & XX $\pm YY$ & XX $\pm YY$ & XX $\pm YY$\\
+\enddata
+% \vspace{-0.8cm}
+\tablecomments{Bestfit parameters from \citep{planckXX:2015} for our two fiducial models.}
+\end{deluxetable}
+
+We repeat the analysis of the Planck Collaboration on five combinations of Planck, PIXIE, and CMB-S4 forecasted likelihoods, using two fiducial models. We compute a fiducial power spectrum in CLASS with a purely adiabatic model \citep{planckXX:2015} and with a model including a nonzero CDM isocurvature contribution consistent with \cite{planckXX:2015}, with $\pii^1 = \text{INSERT VALUE}$, $\pii^2 = \text{INSERT VALUE}$. These parameters are shown in Table \ref{table:fiducialparameters}. The results from sampling are presented in Figure \ref{fig:triangleplots}, and the medians with confidence intervals are presented in Table \ref{table:bestfits}. The bestfit values for isocurvature are $\pii^1 = something$, $\pii^2 = something$. The cosmological parameter measurements are relatively robust to the introduction of CDM isocurvature at a level consistent with Planck.
 
 \writingnote{
   \begin{itemize}
@@ -208,7 +246,11 @@ The bestfit values are $\pii^1 = something$, $\pii^2 = something$.
     \end{itemize}
 }
 
+Figure \ref{fig:triangleplots} demonstrates how improved polarization measurements at large scales from PIXIE results in a factor of \writingnote{N-M} improvement on constraining $\pii^1$, the large scale CDM isocurvature power. The zero-isocurvature model improves substantially in particular by a factor of \writingnote{N-M}. Similarly, improvements in small scale polararization measurements from CMB-S4 can provide \writingnote{N-M} better improvements on $\pii^2$ constraints.
 
+We also present forecasts of derived parameters in Figure \ref{fig:derivedparams} and in Table \writingnote{INSERT TABLE}. Our model spectra with nonzero isocurvature contribution produces an isocurvature detection when observed with both next-generation CMB experiments. If the universe has a primoridal CDM isocurvature fraction of order $10^{-9}$ or more, a combination of CMB-S4 and PIXIE can provide at least a two-sigma detection. 
+
+The fiducial model with nonzero isocurvature that we explore has a very steep tilt, but remains consistent with current constraints. 
 
 
 \subsection{ACTPol Likelihood}\label{actpol}

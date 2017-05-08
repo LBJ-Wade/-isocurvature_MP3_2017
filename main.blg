@@ -1,50 +1,57 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: astroads.bst
 Database file #1: mainNotes.bib
 Database file #2: mybib.bib
+Warning--I didn't find a database entry for "adiab"
+Warning--I didn't find a database entry for "moodley/bucher/turok:2000"
+Warning--I didn't find a database entry for "axion"
+Warning--I didn't find a database entry for "bean"
+Warning--I didn't find a database entry for "pixie"
+Warning--I didn't find a database entry for "litebird"
+Warning--I didn't find a database entry for "planck_inflation"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in baumann/etal:2009
-You've used 11 entries,
+You've used 10 entries,
             3025 wiz_defined-function locations,
-            694 strings with 9733 characters,
-and the built_in function-call counts, 13005 in all, are:
-= -- 789
-> -- 1754
+            695 strings with 9618 characters,
+and the built_in function-call counts, 12431 in all, are:
+= -- 743
+> -- 1710
 < -- 3
-+ -- 654
-- -- 642
-* -- 1505
-:= -- 2562
-add.period$ -- 11
-call.type$ -- 11
-change.case$ -- 258
-chr.to.int$ -- 10
-cite$ -- 12
-duplicate$ -- 217
-empty$ -- 322
-format.name$ -- 677
-if$ -- 2251
++ -- 638
+- -- 627
+* -- 1452
+:= -- 2457
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 249
+chr.to.int$ -- 9
+cite$ -- 11
+duplicate$ -- 197
+empty$ -- 290
+format.name$ -- 659
+if$ -- 2139
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 11
-newline$ -- 54
-num.names$ -- 44
-pop$ -- 271
+missing$ -- 10
+newline$ -- 50
+num.names$ -- 40
+pop$ -- 261
 preamble$ -- 1
-purify$ -- 258
+purify$ -- 249
 quote$ -- 0
-skip$ -- 181
+skip$ -- 162
 stack$ -- 0
-substring$ -- 242
+substring$ -- 212
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
+type$ -- 90
 warning$ -- 1
-while$ -- 43
+while$ -- 39
 width$ -- 0
-write$ -- 117
-(There was 1 warning)
+write$ -- 107
+(There were 8 warnings)

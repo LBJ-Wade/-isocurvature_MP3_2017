@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{}\fi
@@ -80,12 +80,6 @@
 
 \bibitem[{{Langlois}(1999)}]{langlois:1999}
 {Langlois}, D. 1999, \prd, 59, 123512
-
-
-\bibitem[{{Moodley} {et~al.}(2004){Moodley}, {Bucher}, {Dunkley}, {Ferreira},
-  \& {Skordis}}]{moodley/etal:2004}
-{Moodley}, K., {Bucher}, M., {Dunkley}, J., {Ferreira}, P.~G., \& {Skordis}, C.
-  2004, \prd, 70, 103520
 
 
 \bibitem[{{Muya Kasanda} \& {Moodley}(2014)}]{kasanda/moodley:2014}
