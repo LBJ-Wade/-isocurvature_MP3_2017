@@ -1,0 +1,19 @@
+ param names	:  100~\omega_{b }\omega_{cdm } 100*\theta_{s }\tau_{reio }  P_{{RR}^1 }   P_{{RR}^2 }   P_{{II}^1 }   P_{{II}^2 }   P_{{RI}^1 }   
+ R-1 values	:  0.007496	 0.006730	 0.007702	 0.010114	 0.010114	 0.010114	 0.010009	 0.001139	 0.000646	
+ Best Fit  	:  2.222499e+00	 1.181907e-01	 1.042050e+00	 6.781333e-02	 2.375762e-09	 2.100021e-09	 2.580420e-12	 1.233600e-12	-7.439708e-12	
+ mean      	:  2.223051e+00	 1.179461e-01	 1.042005e+00	 6.848570e-02	 2.360686e-09	 2.100522e-09	 2.312016e-11	 3.558606e-10	-7.703054e-12	
+ sigma     	:  nan	 nan	 nan	 nan	 nan	 nan	 1.105677e-11	 nan	 1.078625e-11	
+
+ 1-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	-2.309135e-11	 nan	-4.833792e-12	
+ 1-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	-9.778064e-13	 nan	 1.673871e-11	
+ 2-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	-2.309135e-11	 nan	-4.593386e-11	
+ 2-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 7.004346e-11	 nan	 3.005822e-11	
+ 3-sigma - 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma + 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+
+ 1-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.880634e-14	 nan	-1.253685e-11	
+ 1-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.214235e-11	 nan	 9.035657e-12	
+ 2-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 2.880634e-14	 nan	-5.363692e-11	
+ 2-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 9.316362e-11	 nan	 2.235516e-11	
+ 3-sigma > 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
+ 3-sigma < 	:  nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	 nan	
