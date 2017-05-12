@@ -13,6 +13,11 @@
 \newcommand{\LCDM}   {$\Lambda$CDM}
 \newcommand{\planck}{{\it Planck}}
 \newcommand{\wmap}{{\it WMAP}}
+\newcommand  \be    {\begin{equation}}
+\newcommand  \ee    {\end{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+
 
 \DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{b}{n}
 \newcommand{\prr}{ \mathcal{P}_{\mathcal{R}\mathcal{R}} }
@@ -42,13 +47,13 @@ Isocurvature fluctuations can take the form of variations between the photon and
 %which generates CDM isocurvature perturbations correlated with the adiabatic modes
 \citep{baumann/etal:2009}. Some string theory axions can also generate isocurvature fluctuations from quantum fluctuations, with axion decay to dark matter leading to uncorrelated adiabatic and CDM isocurvature perturbations \cite{axion}. (Mention compensated isocurvature). Early universe models other than inflation could also generate isocurvature.
 
-Data from the \wmap\ satellite, supplemented by Baryon Acoustic Oscillation data, have been used to put upper bounds on the fractional contribution of CDI to the primordial power at less than a percent \citep{hinshaw/etal:2013}, assuming a fixed power-law index and considering either fully uncorrelated or anticorrelated modes. This CDI mode is considered the most physically well-motivated, and is observationally equivalent to baryon isocurvature. Combinations of different isocurvature modes were allowed at a much higher degree \cite{bean}. The \planck\ data reduce the limits on fully correlated power-law CDI to XX, and for a more general partially correlated model limit the fractional power  to be less than 2\% at large scales ($k=0.002$ Mpc$^{-1}$), and less than 52\% at smaller scales ($k=0.1$ Mpc$^{-1}$ \citep{planckXX:2015}.
+Data from the \wmap\ satellite, supplemented by Baryon Acoustic Oscillation data, have been used to put upper bounds on the fractional contribution of CDI to the primordial power at less than a percent \citep{hinshaw/etal:2013}, assuming a fixed power-law index and considering either fully uncorrelated or anticorrelated modes. This CDI mode is considered the most physically well-motivated, and is observationally equivalent to baryon isocurvature. Combinations of different isocurvature modes were allowed at a much higher degree \cite{bean}. The \planck\ data reduce the limits on fully correlated power-law CDI to XX, and for a more general partially correlated model limit the fractional power  to be less than 2\% at large scales ($k=0.002$ Mpc$^{-1}$), and less than 52\% at smaller scales ($k=0.1$ Mpc$^{-1}$ \citep{planckXX:2015}. 
 %These use polarization measurements over the Planck range of $l=2-2508$ for TT and $2-1996$ for TE and EE.
 
-There is still scope for improvement. The isocurvature temperature and polarization power spectra are out of phase with the adiabatic perturbations, so improved CMB polarization measurements can considerably tighten constraints. CMB-S4 is a next-generation ground-based CMB experiment planned for observations in the 2020s, involving hundred of thousands of detectors. It will reduce the polarization noise levels over \planck\ by almost a factor of one hundred, reaching to small angular scales. Proposed low-resolution satellites including PIXIE and LiteBIRD will offer similar improvement for larger angular scales \citep{pixie,litebird}. Forecasts for CMB-S4  predict an increase in sensitivity by a factor of 3-6 over \planck\ for the curvaton scenario \citep{CMB-S4:2016}. \cite{kasanda/moodley:2014} forecast the capabilities of a future CMB satellite, and \cite{smith/grin:2016} forecast that a cosmic-variance limited experiment could reach XX. 
+There is still scope for improvement. The isocurvature temperature and polarization power spectra are out of phase with the adiabatic perturbations, so improved CMB polarization measurements can considerably tighten constraints. We find that currently available ground-based polarization data from the Atacama Cosmology Telescope improve constraints over \planck\ by of order 10\%, but expect the completed CMB Stage-3 and Stage-4 experiments to provide much greater gains. CMB-S4 is a next-generation ground-based CMB experiment planned for observations in the 2020s, involving hundred of thousands of detectors. It will reduce the polarization noise levels over \planck\ by almost a factor of one hundred, reaching to small angular scales. Proposed low-resolution satellites including PIXIE and LiteBIRD will offer similar improvement for larger angular scales \citep{pixie,litebird}. Forecasts for CMB-S4  predict an increase in sensitivity by a factor of 3-6 over \planck\ for the curvaton scenario \citep{CMB-S4:2016}. \cite{kasanda/moodley:2014} forecast the capabilities of a future CMB satellite, and \cite{smith/grin:2016} forecast that a cosmic-variance limited experiment could reach XX. 
 %and investigate the effects of the CMB lensing potential.
 
-In this paper we explore how well the degree of CDI can be constrained with a CMB-S4 level experiment and the proposed PIXIE satellite.  We consider the general CDI model explored by \citet{planck_inflation}, which allows partial correlation of modes and a variable spectral index. 
+In this paper we explore how well the degree of CDI can be constrained with a CMB-S4 level experiment and the proposed PIXIE satellite.  Similar results would hold for the proposed LiteBIRD satellite. We consider the general CDI model explored by \citet{planck_inflation}, which allows partial correlation of modes and a variable spectral index. 
  %We improve upon these results by including an atmospheric model calibrated for the Atacama desert for CMB-S4, and choose a more general isocurvature model.  While we do not involve PRISM, we do explore combinations of Planck, S4, and PIXIE.
 In Section \ref{methods}, we describe the effect of isocurvature on power spectra, our chosen parametrization, and the details of the experimental specifications used in the forecasts. In Section \ref{results}, we present our forecasted constraints, and discuss in section \ref{discussion}.
 %we provide some conclusions about the science yield from each experiment and the whether future measurements will be able to differentiate between models for the origin of the primordial density fluctuations.  
@@ -65,12 +70,11 @@ In Section \ref{methods}, we describe the effect of isocurvature on power spectr
 
 \subsection{Perturbations and Power Spectra}\label{powerspectra}
 
-\writingnote{
-todo: heuristic description of isocurvature effects on CMB power spectra. maybe I include something like the $dD_l/dP_{II}^j$ plots.
-}
+%\writingnote{
+%todo: heuristic description of isocurvature effects on CMB power spectra. maybe I include something like the $dD_l/dP_{II}^j$ plots.
+%}
 
-
-Gaussian fluctuations for a general cosmological perturbation are described by a matrix of power spectra, referring to correlations and amplitudes. In this paper, we only consider primordial CDM isocurvature, so the matrix is $2 \times 2$ where $\pii(k)$ is the power spectrum of $\delta \rho_{CDM} / \rho_{CDM}$, with $\rho_{CDM} = n_c / n_{\gamma}$, the ratio of primordial CDM to photon number densities.
+Gaussian fluctuations for a general cosmological perturbation can be described by a matrix of their power spectra, including both auto- and cross-power spectra. In this paper we only consider primordial CDM isocurvature (CDI) and adiabatic modes, so the matrix describing their power is $2 \times 2$,  
 
 \begin{equation}
 \mathbfcal{P}(k) = \left( {\begin{array}{cc}
@@ -78,44 +82,40 @@ Gaussian fluctuations for a general cosmological perturbation are described by a
    \pri(k) &  \pii(k) \\
   \end{array} } \right)
 \end{equation}
+Here, $\prr(k)$ is the power spectrum of curvature perturbations, and $\pii(k)$ is the power spectrum of $\delta \rho_{\rm CDM} / \rho_{\rm CDM}$, with $\rho_{CDM} = n_c / n_{\gamma}$, the ratio of primordial CDM to photon number densities {\bf (Jo- check this definition)}. $\pri(k)$ is the cross-spectrum.
 
-Following \cite{planckXX:2015}, we parametrize $\prr$, $\pri$, and $\pii$ by choosing the power at two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$ and interpolating geometrically,
+Following \cite{planckXX:2015}, we parametrize $\prr$, $\pri$, and $\pii$ by defining the power at two scales, $k_1 = 0.002$ Mpc$^{-1}$ and $k_2 = 0.100$ Mpc$^{-1}$ and interpolating geometrically,
 \begin{align*}
 \mathcal{P}_{ab}(k) = & \exp \bigg[ \left( \frac{\ln(k) - \ln(k_2)}{\ln(k_1) - \ln(k_2)}\right) \ln \left( \mathcal{P}_{ab}^1 \right) \\
 & +
 \left( \frac{\ln(k) - \ln(k_1)}{\ln(k_2) - \ln(k_1)}\right) \ln \left( \mathcal{P}_{ab}^2 \right) \bigg].
 \end{align*}
-Thus one can recover the tilt by computing the log-log slope,
-\begin{equation} n_{\text{ab}}  =  \frac{\log( \mathcal{P}_{\text{ab}}^2 / \mathcal{P}_{\text{ab}}^1 )}{\log ( k_2 / k_1 )}. \end{equation}
+Thus the spectral index of each component is given by
+\be n_{\text{ab}}  =  \frac{\log( \mathcal{P}_{\text{ab}}^2 / \mathcal{P}_{\text{ab}}^1 )}{\log ( k_2 / k_1 )}. \ee
 
-For a set of the standard cosmological parameters with the additional isocurvature parameters, we compute a theoretical power spectrum with CLASS, a fast Boltzmann code written in C (citation). The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX).  We use the same uniform priors as Planck,
+We compute the theoretical lensed power spectra with CLASS, a fast Boltzmann code \citep{class}, with primordial amplitudes defined by five parameters, $\prr^{(1)}$, $\prr^{(2)}$,  $\pii^{(1)}$, $\pii^{(2)}$, and $\pri^{1}$. 
+%The adiabatic and isocurvature are contained in three functions, $\mathcal{P}_{\mathcal{RR}}(k)$, $\mathcal{P}_{\mathcal{II}}(k)$, and $\mathcal{P}_{\mathcal{RI}}(k)$, the curvature, isocurvature, and cross-correlation power spectra, respectively (cite Planck 2015 XX).
+
+%We use the same uniform priors as Planck,
+%\begin{equation}
+%    \prr^{(1)}, \prr^{(2)} \in (10^{-9}, 10^{-8}),
+%\end{equation}
+%\begin{equation}
+%    \pii^{(1)}, \pii^{(2)} \in (0, 10^{-8}),
+%\end{equation}
+%\begin{equation}
+%    \pri^{(1)} \in (-10^{-8}, 10^{-8}).
+%\end{equation}
+We follow the \planck\ convention of fixing $\pri^{(2)}$ by requiring the correlation fraction, $\Delta$, to be scale-independent. Here
 \begin{equation}
-    \prr^{(1)}, \prr^{(2)} \in (10^{-9}, 10^{-8}),
-\end{equation}
-\begin{equation}
-    \pii^{(1)}, \pii^{(2)} \in (0, 10^{-8}),
-\end{equation}
-\begin{equation}
-    \pri^{(1)} \in (-10^{-8}, 10^{-8}).
-\end{equation}
-We follow Planck 2015 XX's convention of only sampling over $\pri^1$ and fixing $\pri^{(2)}$ by restricting the correlation fraction to be scale-independent,
-\begin{equation}
-\cos \Delta_{\text{ab}} = \frac{\mathcal{P}_{\text{ab}}}{(\mathcal{P}_{\text{aa}} \mathcal{P}_{\text{bb}})^{1/2}} \in (-1,1),
+\cos \Delta = \frac{\pri}{(\prr \pii)^{1/2}}, % \in (-1,1),
 \end{equation}
 so that
 \begin{equation}
-\mathcal{P}_{\text{ab}}^{(2)} = \mathcal{P}_{\text{ab}}^{(1)} \frac{\left(\mathcal{P}_{\text{aa}}^{(2)} \mathcal{P}_{\text{bb}}^{(2)} \right)^{1/2}}{ \left(\mathcal{P}_{\text{aa}}^{(1)} \mathcal{P}_{\text{bb}}^{(1)} \right)^{1/2}}.
-\end{equation}
-We also present the results in terms of derived parameters following \cite{planckXX:2015}, defining the primordial isocurvature fraction as
-\begin{equation}
-\beta_{\text{iso}}(k) = \frac{\pii(k)}{\prr(k) + \pii(k)}.
+\pri^{(2)} = \pri^{(1)} \frac{\left(\prr^{(2)} \pii^{(2)} \right)^{1/2}}{ \left(\prr^{(1)} \pii^{(1)} \right)^{1/2}}.
 \end{equation}
 
-Then we sample over the $\Lambda$CDM scenario, but replace $A_s$ and $n_s$ with $\prr^{(1)}$,  $\prr^{(2)}$ and add the three isocurvature parameters $\pii^{(1)}$, $\pii^{(2)}$, $\pri^{(1)}$.
-\begin{align}
-\{ \Omega_b h^2, \Omega_c h^2, \theta_A, &\tau_{reio}, \prr^{(1)}, \mathcal{P}_{\mathcal{RR}}^{(2)} \\
-& \pii^{(1)}, \pii^{(2)}, \pri^{(1)}    \}
-\end{align}
+
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{figures/logee.pdf}
@@ -124,18 +124,17 @@ Then we sample over the $\Lambda$CDM scenario, but replace $A_s$ and $n_s$ with 
 \end{figure}
 
 \subsection{Forecasting}\label{forecasting}
-We create mock likelihoods following \cite{perotto/etal:2006}, in which for each experiment we are using in our forecasts, we estimate an $l$-range, $f_{\text{sky}}$, beam width $\theta_{\text{fwhm}}$, temperature noise $\sigma_T$, and polarization noise $\sigma_P$. Then we have, for $X,Y \in \{T, E, B\}$ \citep{perotto/etal:2006},
-\begin{equation}
-\mathbf{N}_l^{XY} = \delta_{XY} \theta_{\text{fwhm}}^2 \sigma_X^2 \exp \left[  l(l+1) \frac{\theta_{\text{fwhm}}}{8 \ln 2}  \right]
-\end{equation}
-The parameters we use for each experiment are in Table \ref{table:forecasts}.
 
-For CMB-S4, we also include a multiplicative factor for atmospheric noise, in the form of a fitting function with $l_{\text{knee}} = 330$, $\alpha = -3.8$,
-\begin{equation}
-N_l = N_0 \left( 1 + \left(\frac{l}{l_{\text{knee}}}\right)^{\alpha} \right)
-\end{equation}
+In this analysis we choose to use an MCMC sampling method with simulated data, rather than a Fisher matrix approach, given the highly non-Gaussian nature of the parameter distributions.
 
-We then use this $N_l$ with a fiducial power spectrum generated in CLASS with the Planck 2015 cosmological parameters \citep{planckXIII:2016}. We investigate both a fiducial spectrum with zero isocurvature, and one a relatively extreme model which is still consistent with the Planck constraints.
+We simulate CMB-S4 and PIXIE temperature and polarization likelihoods following \cite{perotto/etal:2006} using standard methods. We define a multipole range, sky fraction $f_{\text{sky}}$, beam size $\theta_{\text{fwhm}}$, temperature noise $\sigma_T$, and polarization noise $\sigma_P$. The noise properties, for $X,Y \in \{T, E, B\}$, are given by
+\begin{equation}
+\mathbf{N}_l^{XY} = \delta_{XY} \theta_{\text{fwhm}}^2 \sigma_X^2 \exp \left[  l(l+1) \frac{\theta_{\text{fwhm}}}{8 \ln 2}  \right].
+\end{equation}
+The errors on the power spectrum are computed using the Knox formula {\bf (what happens at low ell - we assume still Gaussian?)}. The instrumental parameters are given in Table \ref{table:forecasts}. We also simulate \planck\ data using the same method, to check our pipeline against the achieved \planck\ results {\bf (What is the low-ell likelihood)}. For CMB-S4, we test the inclusion of an atmospheric noise model, in the form of a fitting function with $\ell_{\text{knee}} = 330$, $\alpha = -3.8$ \citep{hasselfield},
+\be
+N_\ell = N_0 \left( 1 + \left(\frac{\ell}{\ell_{\text{knee}}}\right)^{\alpha} \right).
+\ee
 
 
 \begin{deluxetable*}{cccccc}
@@ -155,14 +154,27 @@ We then use this $N_l$ with a fiducial power spectrum generated in CLASS with th
 \tablecomments{Noise parameters for CMB-S4 \citep{CMB-S4:2016}, PIXIE (\writingnote{FIND CITATION}), and Planck + Planck Polarization \citep{planckXX:2015}. The three Planck noise levels come from three channels at 70, 100 and 143 GHz respectively.}
 \end{deluxetable*}
 
-We find constraints for the isocurvature parameters using these likelihood parameters and Markov Chain Monte Carlo (MCMC) sampling. We use Monte Python, a Python-based implementation of Metropolis-Hastings and interface for cosmological likelihoods. We use six different combinations of experiments.
+%We find constraints for the isocurvature parameters using these likelihood parameters and Markov Chain Monte Carlo (MCMC) sampling. We use Monte Python, a Python-based implementation of Metropolis-Hastings and interface for cosmological likelihoods.
+
+We simulate six different data combinations:
 \begin{enumerate}
-\item Planck TT ($2 \leq l \leq 2500$), \\ Planck TEB ($2 \leq l \leq 30$).
-\item Planck TEB ($2 \leq l \leq 2500$).
-\item Planck TEB ($2 \leq l \leq 30$,) \\CMB-S4 ($30 < l \leq 3000$).
-\item PIXIE over ($2 \leq l \leq 150$),\\ Planck TEB ($150 < l  \leq 2500$).
-\item PIXIE over ($2 \leq l \leq 150$),\\ CMB-S4 ($150 < l  \leq 2500$).
+\item Planck T+P ($2 \leq \ell \leq 30$), Planck T ($2 \leq \ell \leq 2500$).
+\item Planck T+P ($2 \leq \ell \leq 2500$).
+\item Planck T+P ($2 \leq \ell \leq 30$), CMB-S4 ($30 < \ell \leq 3000$).
+\item PIXIE  $2 \leq \ell \leq 150$), Planck T+P ($150 < \ell  \leq 2500$).
+\item PIXIE ($2 \leq \ell \leq 150$),CMB-S4 ($150 < \ell  \leq 2500$).
 \end{enumerate}
+We consider two models for the signal power spectrum. The first has no isocurvature and the \planck\ 2015 best-fit \LCDM\ cosmological parameters \citep{planckXIII:2016}. The second is a model that fits the \planck\ data but has non-zero isocurvature {\bf (say how much here, not sure need the table)}. The simulated data and models are shown in Figure \ref{fig:effects}.
+
+ We use the Monte Python sampling code to estimate nine cosmological parameters, all with uniform priors: six $\Lambda$CDM parameters, where $A_s$ and $n_s$ are replaced by $\prr^{(1)}$ and  $\prr^{(2)}$, and three additional isocurvature parameters. The set of parameters is
+\begin{align}
+\{ \Omega_b h^2, \Omega_c h^2, \theta_A, &\tau, \prr^{(1)}, \prr^{(2)}, \pii^{(1)}, \pii^{(2)}, \pri^{(1)}   \}.
+\end{align}
+We also impose the prior that $\cos \Delta \in (-1,1)$. We derive parameters following \cite{planckXX:2015}, including the correlation fraction $\Delta$, the spectral indices $n_{\mathcal{RR},\mathcal{II}}$, and the primordial isocurvature fraction 
+\be
+\beta_{\text{iso}}(k) = \frac{\pii(k)}{\prr(k) + \pii(k)}.
+\ee
+
 
 
 \section{Results}\label{results}
