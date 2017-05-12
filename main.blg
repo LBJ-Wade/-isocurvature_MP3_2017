@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: astroads.bst
 Database file #1: mainNotes.bib
@@ -11,11 +11,13 @@ Warning--I didn't find a database entry for "bean"
 Warning--I didn't find a database entry for "pixie"
 Warning--I didn't find a database entry for "litebird"
 Warning--I didn't find a database entry for "planck_inflation"
+Warning--I didn't find a database entry for "class"
+Warning--I didn't find a database entry for "hasselfield"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in baumann/etal:2009
 You've used 10 entries,
             3025 wiz_defined-function locations,
-            695 strings with 9618 characters,
+            697 strings with 9634 characters,
 and the built_in function-call counts, 12431 in all, are:
 = -- 743
 > -- 1710
@@ -54,4 +56,4 @@ warning$ -- 1
 while$ -- 39
 width$ -- 0
 write$ -- 107
-(There were 8 warnings)
+(There were 10 warnings)
