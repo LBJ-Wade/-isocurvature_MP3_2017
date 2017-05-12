@@ -11,16 +11,17 @@ from getdist import plots, MCSamples
 import getdist
 
 import numpy as np
-import matplotlib.pyplot as plt 
-import astropy 
+import matplotlib.pyplot as plt
+import astropy
 from loadMontePython import load as loadMCMC
 import glob
 
-basedir = "/home/zequnl/Projects/isocurvature_2017/analysis/plot_triangle/nonzero/"
+basedir = '../chains/zero_isocurvature_model/'
+#"/home/zequnl/Projects/isocurvature_2017/analysis/plot_triangle/nonzero/"
 
 burnin = 1000
-data1 = loadMCMC('planckdata/r1.txt', 'planckdata/param')
-data2 = loadMCMC('planckdata/r2.txt', 'planckdata/param')
+data1 = loadMCMC('../chains/planckdata/r1.txt', '../chains/planckdata/param')
+data2 = loadMCMC('../chains/planckdata/r2.txt', '../chains/planckdata/param')
 data = astropy.table.vstack( [data1[burnin:], data2[burnin:]])
 data_planck = data[:]
 weights_planck = data['acceptance'][:]
@@ -31,7 +32,7 @@ nparr_planck = np.array(data.as_array().tolist()[:])
 planck = MCSamples(samples=nparr_planck,names = data.colnames, labels = data.colnames, name_tag='Planck')
 
 
-## A 
+## A
 folder = basedir + 'fA/'
 files = glob.glob(folder + "*__*.txt")
 params = glob.glob(folder + "*_.paramnames")
@@ -49,7 +50,7 @@ nparr_act = np.array(data.as_array().tolist()[:])
 planck = MCSamples(samples=nparr_act,names = data.colnames, labels = data.colnames, name_tag='Planck low_l TEB + high_l TT')
 
 
-## C 
+## C
 folder = basedir + 'fC/'
 files = glob.glob(folder + "*__*.txt")
 params = glob.glob(folder + "*_.paramnames")
@@ -67,7 +68,7 @@ nparr_act = np.array(data.as_array().tolist()[:])
 planck_s4 = MCSamples(samples=nparr_act,names = data.colnames, labels = data.colnames, name_tag='Planck low_l + S4')
 
 
-## E 
+## E
 folder = basedir + 'fE/'
 files = glob.glob(folder + "*__*.txt")
 params = glob.glob(folder + "*_.paramnames")
@@ -127,5 +128,5 @@ for ax in g.subplots[3,:]:
 	if ax != None:
 		ax.set_ylim(0,ax.get_ylim()[1])
 
-plt.savefig('plot_with_planck.pdf')
+plt.savefig('../../figures/overplot_with_planck.pdf')
 plt.show()

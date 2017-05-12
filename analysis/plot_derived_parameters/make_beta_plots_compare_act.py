@@ -14,9 +14,11 @@ from astropy.table import vstack
 colorlist = ['b','r','g','c','m', 'k','y']
 colorInd = 0
 
+
+basedir = '../chains/zero_isocurvature_model/'
 # CONFIGURATION -------------
-chainfile = "planckdata/r1.txt"
-paramfile = "planckdata/param"
+chainfile = "../chains/planckdata/r1.txt"
+paramfile = "../chains/planckdata/param"
 xname = 'P_{II}^1'
 yname = 'P_{RI}^1'
 options = ""
@@ -36,10 +38,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[300:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[300:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -76,7 +78,7 @@ def denplot( list_data, ax, name="data", \
     extent=0.1, cov=0.2, fmt="k--", mylabel="label" ):
     x = np.linspace(lower, upper, 300)
 
-    
+
     if extend:
 
         bools = list_data < extent
@@ -121,6 +123,8 @@ fig = plt.figure(figsize=(12,18))
 
 
 ## NOW ACT PART
+
+basedir = '../chains/zero_isocurvature_model/'
 # CONFIGURATION ------------------------------------------------
 chainfile = ""
 paramfile = ""
@@ -132,7 +136,7 @@ options = ""
 # chainfolder = "chains/fF/"
 # mylabel="PIXIE lowl, S4"
 
-chainfolder = "chains/oldF/fA/"
+chainfolder = basedir + 'fA'
 mylabel="planck lowl, planck forecast for highl"
 
 # chainfolder = "chains/fC/"
@@ -159,10 +163,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[100:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[100:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -230,7 +234,7 @@ options = ""
 # chainfolder = "chains/fF/"
 # mylabel="PIXIE lowl, S4"
 
-chainfolder = "chains/oldF/fB/"
+chainfolder = basedir + 'fB'
 mylabel="planck lowl, planck+pol forecast for highl"
 
 # chainfolder = "chains/fC/"
@@ -257,10 +261,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[100:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[100:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -329,7 +333,7 @@ options = ""
 # chainfolder = "chains/oldF/fA/"
 # mylabel="planck lowl, planck forecast for highl"
 
-chainfolder = "chains/fC/"
+chainfolder = basedir + 'fC'
 mylabel="Planck lowl, S4"
 
 # chainfolder = "chains/fE/"
@@ -353,10 +357,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[100:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[100:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -428,7 +432,7 @@ options = ""
 # chainfolder = "chains/fC/"
 # mylabel="Planck lowl, S4"
 
-chainfolder = "chains/fE/"
+chainfolder = basedir + 'fE'
 mylabel="PIXIE lowl, Planck highl"
 
 
@@ -449,10 +453,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[100:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[100:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -516,7 +520,7 @@ yname = 'P_{RI}^1'
 options = ""
 
 
-chainfolder = "chains/fF/"
+chainfolder = basedir + 'fF'
 mylabel="PIXIE lowl, S4"
 
 # chainfolder = "chains/oldF/fA/"
@@ -546,10 +550,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[100:]        
+        data = ascii.read(chainfile, delimiter="\s")
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -606,4 +610,3 @@ plt.legend()
 plt.tight_layout()
 plt.savefig("../../figures/all_derived_forecast.pdf")
 plt.show()
-

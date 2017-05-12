@@ -50,10 +50,10 @@ data_all = None
 
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
-        
+
         chainfile = os.path.join(chainfolder, filename)
         print(chainfile)
-        data = (ascii.read(chainfile, delimiter="\s"))[300:]        
+        data = (ascii.read(chainfile, delimiter="\s"))[300:]
 
         # set up column names (read in from param file)
         data['col1'].name = 'acceptance'
@@ -148,5 +148,3 @@ plt.savefig("../../figures/beta_planck.pdf")
 plt.show()
 
 ## TESTING
-
-
