@@ -161,6 +161,7 @@ print(params)
 
 data_all = None
 
+print(chainfolder)
 for filename in os.listdir(chainfolder):
     if filename.startswith("201") and filename.endswith(".txt"):
 
