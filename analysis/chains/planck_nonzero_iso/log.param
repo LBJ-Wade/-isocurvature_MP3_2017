@@ -1,0 +1,116 @@
+#-----CLASS v2.5.0 (branch: , hash: )-----
+
+#------Experiments to test (separated with commas)-----
+
+
+data.experiments=  ['fake_planck_lowl_nonzero_iso', 'fake_planck_TP_highl_no_PIXIE_nonzero_iso'] 
+
+#------ Settings for the over-sampling.
+# The first element will always be set to 1, for it is the sampling of the
+# cosmological parameters. The other numbers describe the over sampling of the
+# nuisance parameter space. This array must have the same dimension as the
+# number of blocks in your run (so, 1 for cosmological parameters, and then 1
+# for each experiment with varying nuisance parameters).
+# Note that when using Planck likelihoods, you definitely want to use [1, 4],
+# to oversample as much as possible the 14 nuisance parameters.
+# Remember to order manually the experiments from slowest to fastest (putting
+# Planck as the first set of experiments should be a safe bet, except if you
+# also have LSS experiments).
+# If you have experiments without nuisance, you do not need to specify an
+# additional entry in the over_sampling list (notice for instance that, out of
+# the three Planck likelihoods used, only Planck_highl requires nuisance
+# parameters, therefore over_sampling has a length of two (cosmology, plus one
+# set of nuisance).
+# data.over_sampling=[1, 4]
+
+#------ Parameter list -------
+
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# - if min max irrelevant, put to None
+# - if fixed, put 1-sigma to 0
+# - if scale irrelevant, put to 1, otherwise to the appropriate factor
+# - role is either 'cosmo', 'nuisance' or 'derived'. You should put the derived
+# parameters at the end, and in case you are using the `-j fast` Cholesky
+# decomposition, you should order your nuisance parameters from slowest to
+# fastest.
+
+# Cosmological parameters list
+
+data.parameters['omega_b']      = [ 2.22344,   2.0, 2.5,  0.028, 0.01, 'cosmo']
+data.parameters['omega_cdm']    = [1.17997e-01,   0.05, 0.15, 0.0027,    1, 'cosmo']
+data.parameters['100*theta_s']  = [ 1.04204e+00 ,   1.02, 1.06,   3e-4,    1, 'cosmo']
+data.parameters['tau_reio']     = [6.90537e-02 ,   0.04, 0.2,  0.005,    1, 'cosmo']
+
+data.parameters['P_{RR}^1']      = [2.37280e-09,   1e-9, 1e-8,  0.1e-9, 1, 'cosmo']
+data.parameters['P_{RR}^2']      = [ 2.10444e-09 ,   1e-9, 1e-8,  0.1e-9, 1, 'cosmo']
+data.parameters['P_{II}^1']      = [  1e-10,   0.0,  1e-8,  2.0e-10, 1, 'cosmo']
+data.parameters['P_{II}^2']      = [  1e-09,   0.0,  1e-8,  2e-9, 1, 'cosmo']
+data.parameters['P_{RI}^1']      = [  1e-12,   -1e-8, 1e-8, 2.0e-10, 1, 'cosmo']
+
+
+# Nuisance parameter list, same call, except the name does not have to be a class name
+
+
+
+# Other cosmo parameters (fixed parameters, precision parameters, etc.)
+data.cosmo_arguments['ic'] = 'ad&cdi'
+data.cosmo_arguments['sBBN file'] = data.path['cosmo']+'/bbn/sBBN.dat'
+data.cosmo_arguments['P_k_ini type'] = 'two_scales'
+data.cosmo_arguments['k1'] = 0.002
+data.cosmo_arguments['k2'] = 0.1
+
+# The base model features two massless
+# and one massive neutrino with m=0.06eV.
+# The settings below ensures that Neff=3.046
+# and m/omega = 93.14 eV
+data.cosmo_arguments['N_ur'] = 2.0328
+data.cosmo_arguments['N_ncdm'] = 1
+data.cosmo_arguments['m_ncdm'] = 0.06
+data.cosmo_arguments['T_ncdm'] = 0.71611
+
+# These two are required to get sigma8 as a derived parameter
+# (class must compute the P(k) until sufficient k)
+data.cosmo_arguments['output'] = 'mPk'
+data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
+
+
+
+#------ Mcmc parameters ----
+
+data.N=1000000
+data.write_step=1
+
+
+#-----Likelihood-fake_planck_lowl_nonzero_iso-----
+fake_planck_lowl_nonzero_iso.l_max = 29
+fake_planck_lowl_nonzero_iso.sigma_P = [103.0, 81.0, 134.0]
+fake_planck_lowl_nonzero_iso.theta_fwhm = [10.0, 7.1, 5.0]
+fake_planck_lowl_nonzero_iso.sigma_T = [65.0, 43.0, 66.0]
+fake_planck_lowl_nonzero_iso.num_channels = 3
+fake_planck_lowl_nonzero_iso.data_directory = '/home/zequnl/montepython_iso/data'
+fake_planck_lowl_nonzero_iso.fiducial_file = 'fake_planck_lowl_nonzero_iso_fiducial.dat'
+fake_planck_lowl_nonzero_iso.f_sky = 0.65
+fake_planck_lowl_nonzero_iso.l_min = 2
+
+
+#-----Likelihood-fake_planck_TP_highl_no_PIXIE_nonzero_iso-----
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.l_max = 2500
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.sigma_P = [103.0, 81.0, 134.0]
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.theta_fwhm = [10.0, 7.1, 5.0]
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.sigma_T = [65.0, 43.0, 66.0]
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.num_channels = 3
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.data_directory = '/home/zequnl/montepython_iso/data'
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.fiducial_file = 'fake_planck_TP_highl_no_PIXIE_nonzero_iso_fiducial.dat'
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.f_sky = 0.65
+fake_planck_TP_highl_no_PIXIE_nonzero_iso.l_min = 30
+
+
+#-----------Cosmological-arguments---------
+data.cosmo_arguments.update({'sBBN file': '/home/zequnl/class_public/bbn/sBBN.dat', 'P_k_max_h/Mpc': 1.0, 'output': 'mPk tCl lCl pCl ', 'N_ur': 2.0328, 'l_max_scalars': 2500, 'm_ncdm': 0.06, 'k2': 0.1, 'k1': 0.002, 'lensing': ' yes ', 'N_ncdm': 1, 'T_ncdm': 0.71611, 'ic': 'ad&cdi', 'P_k_ini type': 'two_scales'})
+
+
+#--------Default-Configuration------
+data.path['cosmo']	= '/home/zequnl/class_public'
+data.path['root']	= '/home/zequnl/montepython_iso'
+data.path['data']	= '/home/zequnl/montepython_iso/data'
+data.path['MontePython']	= '/home/zequnl/montepython_iso/montepython'

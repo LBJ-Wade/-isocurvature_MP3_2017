@@ -1,0 +1,7 @@
+2017-05-21_1000000__4.txt	  Number of steps:11023	 Steps accepted:1741	 acc = 0.16	min(-loglike) = 0.98
+2017-05-21_1000000__3.txt	  Number of steps:10738	 Steps accepted:1651	 acc = 0.15	min(-loglike) = 0.69
+2017-05-21_1000000__2.txt	  Number of steps:11041	 Steps accepted:1785	 acc = 0.16	min(-loglike) = 0.57
+2017-05-21_1000000__1.txt	  Number of steps:11458	 Steps accepted:1930	 acc = 0.17	min(-loglike) = 0.51
+--> Total    number    of    steps: 44260
+--> Total number of accepted steps: 7107
+--> Minimum of -logLike           : 0.51
