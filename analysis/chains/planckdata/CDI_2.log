@@ -1,0 +1,23 @@
+2016-11-02_1000000__1.txt	  Number of steps:14777	 Steps accepted:2895	 acc = 0.2	min(-loglike) = 5356.01
+2016-11-02_1000000__2.txt	  Number of steps:15077	 Steps accepted:2870	 acc = 0.19	min(-loglike) = 5355.86
+2016-11-02_1000000__5.txt	  Number of steps:11144	 Steps accepted:2105	 acc = 0.19	min(-loglike) = 5355.21
+2016-11-02_1000000__6.txt	  Number of steps:10736	 Steps accepted:2065	 acc = 0.19	min(-loglike) = 5356.21
+2016-11-02_1000000__7.txt	  Number of steps:10905	 Steps accepted:2060	 acc = 0.19	min(-loglike) = 5356.17
+2016-11-02_1000000__3.txt	  Number of steps:15481	 Steps accepted:3025	 acc = 0.2	min(-loglike) = 5355.65
+2016-11-02_1000000__4.txt	  Number of steps:15494	 Steps accepted:2945	 acc = 0.19	min(-loglike) = 5355.94
+2016-11-02_1000000__8.txt	  Number of steps:11086	 Steps accepted:2105	 acc = 0.19	min(-loglike) = 5355.80
+2016-11-02_1000000__9.txt	  Number of steps:10452	 Steps accepted:2105	 acc = 0.2	min(-loglike) = 5356.10
+2016-11-02_1000000__10.txt	  Number of steps:10735	 Steps accepted:2085	 acc = 0.19	min(-loglike) = 5356.09
+2016-11-02_1000000__11.txt	  Number of steps:10670	 Steps accepted:2050	 acc = 0.19	min(-loglike) = 5355.67
+2016-11-02_1000000__12.txt	  Number of steps:10776	 Steps accepted:2105	 acc = 0.2	min(-loglike) = 5356.18
+2016-11-02_1000000__13.txt	  Number of steps:10851	 Steps accepted:2170	 acc = 0.2	min(-loglike) = 5355.59
+2016-11-02_1000000__14.txt	  Number of steps:10760	 Steps accepted:2075	 acc = 0.19	min(-loglike) = 5355.89
+2016-11-02_1000000__15.txt	  Number of steps:11309	 Steps accepted:2220	 acc = 0.2	min(-loglike) = 5355.93
+2016-11-02_1000000__16.txt	  Number of steps:10891	 Steps accepted:1980	 acc = 0.18	min(-loglike) = 5355.44
+2016-11-02_1000000__17.txt	  Number of steps:10540	 Steps accepted:2080	 acc = 0.2	min(-loglike) = 5355.83
+2016-11-02_1000000__18.txt	  Number of steps:11048	 Steps accepted:2130	 acc = 0.19	min(-loglike) = 5355.75
+2016-11-02_1000000__19.txt	  Number of steps:10658	 Steps accepted:2160	 acc = 0.2	min(-loglike) = 5355.84
+2016-11-02_1000000__20.txt	  Number of steps:11246	 Steps accepted:1950	 acc = 0.17	min(-loglike) = 5355.53
+--> Total    number    of    steps: 234636
+--> Total number of accepted steps: 45180
+--> Minimum of -logLike           : 5355.21
